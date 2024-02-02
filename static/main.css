@@ -1,0 +1,70 @@
+@import url(themes.css);
+
+body {
+  color: var(--text-color);
+  background-color: var(--background);
+  background-image: var(--background);
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+}
+div.siteinfos {
+  display: flex-center;
+  justify-content: flex-center;
+  position: relative;
+  top: 125px;
+}
+.mainNAVimage-container {
+  display: block;
+  width: 200px; /* Set the desired width */
+  height: 90px; /* Set the desired height */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.mainNAVimage {
+  width: 100%; /* Make sure the image takes the full width of its container */
+  height: 100%;
+  object-fit: cover;
+}
+.credits {
+  display: flex-center;
+  justify-content: flex-center;
+  position: relative;
+  top: 145px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent); 
+}
+.settings {
+  border-radius: 15px;
+  position: relative;
+  top: 150px;
+}
+.settings-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.settings-button {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 100px;
+}
+.center-container {
+  border-radius: 15px;
+  position: relative;
+  top: 150px;
+}
+div#particles-js {
+  position: relative;
+  top: 200px;
+}

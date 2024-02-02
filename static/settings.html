@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link
+      rel="shortcut icon"
+      href="Games & Stuff Logo (1).png"
+      type="image/png"
+    />
+                <title>Games & Stuff</title>
+                    <link rel="stylesheet" href="style.css">
+                        <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+          <nav>
+                  <p id="time"></p>
+                  
+                        <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 0 0 15px 15px">
+                                  <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games.html">Games</a></div>
+                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps.html">Apps</a></div>
+                                          <a href="index.html" class="mainNAVimage-container">
+                                            <img src="G&S nav.png" class="mainNAVimage">
+                                          </a>                                                                           
+                                                                                    
+                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/search.html">Search</a></div>
+                                                  <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings.html">Settings</a></div>
+                        </div>
+
+                        <h2 class="settings">Tab cloaking</h2>
+                        <input type="text" id="tabname" placeholder="Tab name" class="settings settings-input" />
+                        <button onclick="setTabName()" class="settings settings-button">Set tab name</button><br />
+                        <input type="text" id="tabicon" placeholder="Tab icon" class="settings settings-input" />
+                        <button onclick="setTabIcon()" class="settings settings-button">Set tab icon</button><br />                                                
+
+                          <br /><br />
+                          
+                          <h2 class="settings">Themes</h2>
+                          <select id="theme-select" class="settings">
+                            <option value="main">Default</option>
+                            <option value="purple">Purple</option>
+                            <option value="amoled">AMOLED</option>
+                            <option value="red and blue">Red And Blue</option>
+                            <!-- add more options for other themes -->
+                          </select>
+                          
+                          <br /><br />                          
+
+                        <script src="settings.js"></script>
+                        <script src="js/index.js"></script>
