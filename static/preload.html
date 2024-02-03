@@ -32,3 +32,35 @@
         <div class="GameTitle">
           <img id="GameImage" alt="icon" />
         </div>
+
+          <script>
+    // Get the game name from the query parameter
+    const params = new URLSearchParams(window.location.search);
+    const gameName = params.get('game');
+
+    // Load the games.json file (assuming it's in the same directory)
+    fetch('games.json')
+      .then(response => response.json())
+      .then(games => {
+        // Find the selected game in the games array
+        const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
+
+        if (selectedGame) {
+          // Set the iframe src, game title, and image
+          const iframe = document.getElementById('frame');
+          const gameTitle = document.getElementById('GameImage');
+          const gameImage = document.getElementById('GameImage');
+
+          iframe.src = selectedGame.url;
+          gameTitle.textContent = selectedGame.name;
+          gameImage.src = selectedGame.image;
+        } else {
+          console.error('Game not found');
+        }
+      })
+      .catch(error => console.error('Error loading games.json', error));
+  </script>
+      </div>
+        </div>
+  </body>
+</html>
