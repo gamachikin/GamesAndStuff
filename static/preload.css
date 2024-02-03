@@ -1,0 +1,7 @@
+.GameContainer iframe {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+}
