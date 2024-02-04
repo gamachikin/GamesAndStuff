@@ -79,53 +79,30 @@
             <img id="GameImage" alt="icon" />
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <script>
-          const games = {
-            "slope": {
-              "url": "https://kdata1.com/2020/05/slope/",
-              "image": "snake.jpg",
-              "description": "A classic snake game."
-            },
-            "OvO": {
-              "url": "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml",
-              "image": "snake.jpg",
-              "description": "asdcasd."
-            },
-          };
-
-          // Get the game name from the query parameter
-          const params = new URLSearchParams(window.location.search);
-          const gameName = params.get('game');
-
-          // Find the selected game
-          const selectedGame = games[gameName];
-
-          if (selectedGame) {
-            // Set the iframe src, game title, and image
-            const iframe = document.getElementById('frame');
-            const gameTitle = document.getElementById('GameTitle');
-            const gameImage = document.getElementById('GameImage');
-
-            iframe.src = selectedGame.url;
-            gameTitle.textContent = gameName;
-            gameImage.src = selectedGame.image;
-
-            // Pass the selected game URL to the second code
-            const secondCodeScript = document.createElement('script');
-            secondCodeScript.textContent = `var gameUrl = "${selectedGame.url}";`;
-            document.head.appendChild(secondCodeScript);
-          } else {
-            console.error('Game not found');
-          }
-        </script>
-
+  <div class="container">
+    <div class="custom-dropdown" onclick="toggleDropdown()">
+      <button class="dropdown-button">Select A Cloak</button>
+      <div class="dropdown-content">
+        <div class="dropdown-option" onclick="selectOption('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('My Drive - Google Drive', 'https://drive.google.com/favicon.ico')">Google Drive Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Google Docs', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png')">Google Docs Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Home', 'https://edu.google.com/images/svg/gsuite-icons/classroom.svg')">Classroom Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Google', 'https://google.com/favicon.ico')">Google Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Infinite Campus', 'https://www.infinitecampus.com/favicon.ico')">Infinite Campus Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Your Sets | Quizlet', 'https://quizlet.com/favicon.ico')">Quizlet Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Dashboard', 'https://jackson.instructure.com/favicon.ico')">Canvas Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('Clever | Log in', 'https://assets.clever.com/oauth/3b8aa8ff1c6e6c2c353abcf2694107ca9a53126d/favicon.ico?1')">Clever Cloak</div>
+        <div class="dropdown-option" onclick="selectOption('IXL | Dashboard', 'https://ixl.com/favicon.ico')">IXL Cloak</div>
       </div>
     </div>
   </div>
 
   <script>
-    var commonIframeUrl = window.gameUrl || "";
+    var commonIframeUrl = "";
     var dropdownActive = false;
 
     function toggleDropdown() {
@@ -165,9 +142,5 @@
       win.document.body.appendChild(iframe);
     }
   </script>
-
-  <div class="container">
-    <div class="custom-dropdown" onclick="toggleDropdown()">
-      <button class="dropdown-button">Select A Cloak</button>
-      <div class="dropdown-content">
-        <div class="dropdown-option" onclick
+</body>
+</html>
