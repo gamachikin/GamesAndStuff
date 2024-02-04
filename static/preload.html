@@ -1,79 +1,173 @@
 <html lang="en">
-  <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link
-      rel="shortcut icon"
-      href="Games & Stuff Logo (1).png"
-      type="image/png"
-    />
-                <title>Games & Stuff</title>
-                    <link rel="stylesheet" href="style.css">
-                        <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-          <nav>
-                  <p id="time"></p>
-                  
-                        <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 0 0 15px 15px">
-                                  <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
-                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
-                                          <a href="/" class="mainNAVimage-container">
-                                            <img src="G&S nav.png" class="mainNAVimage">
-                                          </a>                                                                           
-                                                                                    
-                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
-                                                  <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings">Settings</a></div>
-                        </div>
-          </nav>
-<div style="padding-top: 139px">
- <div class="GameContainer">
-  <div class="FrameContainer">
-   <iframe allowfullscreen="true" frameborder="0" id="frame"></iframe>
-<div id="GameInfo">
-  <div class="GameTitle">
-    <img id="GameImage" alt="icon" />
-  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Games & Stuff Logo (1).png" type="image/png"/>
+  <title>Games & Stuff</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
+  <style>
+    /* Style the container to center the dropdown */
+    .container {
+      text-align: center;
+    }
+
+    /* Style the custom dropdown container */
+    .custom-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style the dropdown button */
+    .dropdown-button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
+      background-size: cover;
+      color: #fff;
+      font-family: 'Lato', sans-serif;
+      font-size: 19px;
+      width: 200px; /* Adjust the width as needed */
+    }
+
+    /* Style the dropdown options container */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      border-radius: 5px;
+      width: 200px;
+      z-index: 1;
+    }
+
+    /* Style the dropdown options */
+    .dropdown-option {
+      padding: 9px 16px;
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
+    }
+
+    /* Show the options when the button is clicked */
+    .custom-dropdown.active .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <p id="time"></p>
+    <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 0 0 15px 15px">
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
+      <a href="/" class="mainNAVimage-container">
+        <img src="G&S nav.png" class="mainNAVimage">
+      </a>                                                                           
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings">Settings</a></div>
+    </div>
+  </nav>
+  <div style="padding-top: 139px">
+    <div class="GameContainer">
+      <div class="FrameContainer">
+        <iframe allowfullscreen="true" frameborder="0" id="frame"></iframe>
+        <div id="GameInfo">
+          <div class="GameTitle">
+            <img id="GameImage" alt="icon" />
+          </div>
+        </div>
+
+        <script>
+          const games = {
+            "slope": {
+              "url": "https://kdata1.com/2020/05/slope/",
+              "image": "snake.jpg",
+              "description": "A classic snake game."
+            },
+            "OvO": {
+              "url": "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml",
+              "image": "snake.jpg",
+              "description": "asdcasd."
+            },
+          };
+
+          // Get the game name from the query parameter
+          const params = new URLSearchParams(window.location.search);
+          const gameName = params.get('game');
+
+          // Find the selected game
+          const selectedGame = games[gameName];
+
+          if (selectedGame) {
+            // Set the iframe src, game title, and image
+            const iframe = document.getElementById('frame');
+            const gameTitle = document.getElementById('GameTitle');
+            const gameImage = document.getElementById('GameImage');
+
+            iframe.src = selectedGame.url;
+            gameTitle.textContent = gameName;
+            gameImage.src = selectedGame.image;
+
+            // Pass the selected game URL to the second code
+            const secondCodeScript = document.createElement('script');
+            secondCodeScript.textContent = `var gameUrl = "${selectedGame.url}";`;
+            document.head.appendChild(secondCodeScript);
+          } else {
+            console.error('Game not found');
+          }
+        </script>
+
+      </div>
+    </div>
   </div>
 
   <script>
-    const games = {
-      "slope": {
-        "url": "https://kdata1.com/2020/05/slope/",
-        "image": "snake.jpg",
-        "description": "A classic snake game."
-      },
-      "OvO": {
-        "url": "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml",
-        "image": "snake.jpg",
-        "description": "asdcasd."
-      },
-    };
+    var commonIframeUrl = window.gameUrl || "";
+    var dropdownActive = false;
 
-    // Get the game name from the query parameter
-    const params = new URLSearchParams(window.location.search);
-    const gameName = params.get('game');
+    function toggleDropdown() {
+      dropdownActive = !dropdownActive;
+      var dropdownContent = document.querySelector('.dropdown-content');
+      if (dropdownActive) {
+        dropdownContent.style.display = 'block';
+      } else {
+        dropdownContent.style.display = 'none';
+      }
+    }
 
-    // Find the selected game
-    const selectedGame = games[gameName];
+    function selectOption(title, faviconUrl) {
+      toggleDropdown();
+      openFullscreen(title, faviconUrl);
+    }
 
-    if (selectedGame) {
-      // Set the iframe src, game title, and image
-      const iframe = document.getElementById('frame');
-      const gameTitle = document.getElementById('GameTitle');
-      const gameImage = document.getElementById('GameImage');
+    function openFullscreen(title, faviconUrl) {
+      var win = window.open('about:blank', '_blank');
 
-      iframe.src = selectedGame.url;
-      gameTitle.textContent = gameName;
-      gameImage.src = selectedGame.image;
-    } else {
-      console.error('Game not found');
+      var favicon = win.document.createElement('link');
+      favicon.rel = 'shortcut icon';
+      favicon.href = faviconUrl;
+      favicon.type = 'image/x-icon';
+      win.document.head.appendChild(favicon);
+
+      win.document.title = title.replace(/_PIPE_/g, '|'); // Replace _PIPE_ with |
+
+      var iframe = win.document.createElement('iframe');
+      iframe.src = commonIframeUrl;
+      iframe.style.position = 'absolute';
+      iframe.style.top = '0';
+      iframe.style.left = '0';
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
+      win.document.body.appendChild(iframe);
     }
   </script>
 
- </div>
- </div>
-</div>
-<script src="/index.js"></script>
-  </body>
-</html>
+  <div class="container">
+    <div class="custom-dropdown" onclick="toggleDropdown()">
+      <button class="dropdown-button">Select A Cloak</button>
+      <div class="dropdown-content">
+        <div class="dropdown-option" onclick
