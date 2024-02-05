@@ -68,3 +68,56 @@ div#particles-js {
   position: relative;
   top: 200px;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin-bottom: 10px;
+  flex: 0 0 calc(33.333% - 20px); /* Adjust the width of each item based on the number of items per row */
+  margin-right: 20px;
+}
+
+/* Style each game item */
+li {
+  width: 145px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+}
+
+li img {
+  width: 145px;
+  height: 145px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+li p {
+  width: 145px;
+  height: 19px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  padding-top: 136px;
+  padding-bottom: 12px;
+}
+
+li:hover {
+  transform: scale(1.2);
+}
+
+li:hover .label {
+  transform: translateX(-50%) scale(1.3);
+}
