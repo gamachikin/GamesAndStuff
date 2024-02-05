@@ -10,44 +10,49 @@
 </head>
 <body>
   <nav>
-    <p id="time"></p>
-    <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 0 0 15px 15px">
-      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
-      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
-      <a href="/" class="mainNAVimage-container">
-        <img src="G&S nav.png" class="mainNAVimage">
-      </a>                                                                           
-      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
-      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings">Settings</a></div>
-    </div>
+    <!-- Your navigation content here -->
   </nav>
 
   <h1>Game List</h1>
 
-  <ul id="gameList">
-    <!-- Game list will be populated dynamically here -->
-  </ul>
+  <ul id="gameList"></ul>
 
   <script>
-    // Fetch data from preload.html and populate the game list
+    // Fetch game information from preload.html
     fetch('preload.html')
       .then(response => response.text())
       .then(data => {
         const parser = new DOMParser();
-        const htmlDocument = parser.parseFromString(data, 'text/html');
-        const gameLinks = htmlDocument.querySelectorAll('a[href^="preload.html?game"]');
+        const preloadDocument = parser.parseFromString(data, 'text/html');
+        const games = preloadDocument.defaultView.games;
+
+        // Populate the game list
         const gameList = document.getElementById('gameList');
-        
-        gameLinks.forEach(link => {
-          const gameName = link.innerText;
-          const gameUrl = link.getAttribute('href');
-          const listItem = document.createElement('li');
-          listItem.innerHTML = `<a href="${gameUrl}">${gameName}</a>`;
-          gameList.appendChild(listItem);
-        });
+        for (const game in games) {
+          if (games.hasOwnProperty(game)) {
+            const gameInfo = games[game];
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+              <a href="${gameInfo.url}">
+                <div class="GameContainer">
+                  <div class="FrameContainer">
+                    <iframe src="${gameInfo.url}" allowfullscreen="true" frameborder="0"></iframe>
+                    <div class="GameInfo">
+                      <div class="GameTitle">${game}</div>
+                      <img class="GameImage" src="${gameInfo.image}" alt="Game Image">
+                      <p>${gameInfo.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            `;
+            gameList.appendChild(listItem);
+          }
+        }
       })
-      .catch(error => console.error('Error fetching game list:', error));
+      .catch(error => console.error('Error fetching game information:', error));
   </script>
+
   <script src="/index.js"></script>
 </body>
 </html>
