@@ -8,7 +8,7 @@ nav .navitems {
   justify-self: flex-end;
   justify-content: center;
   position: fixed;
-  top: 0;
+  top: 10px;
   font-size: 22px;
   left: 0;
   right: 0;
@@ -34,8 +34,3 @@ nav a {
                           transition: 0.4s all;
 
 }
-.MainText {
-      font-size: 36px;
-      text-align: center;
-      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff4000, 0 0 15px #ff8000, 0 0 20px #ffbf00, 0 0 25px #ffff00, 0 0 30px #bfff00, 0 0 35px #80ff00, 0 0 40px #40ff00, 0 0 45px #00ff00, 0 0 50px #00ff40, 0 0 55px #00ff80, 0 0 60px #00ffbf, 0 0 65px #00ffff, 0 0 70px #00bfff, 0 0 75px #0080ff, 0 0 80px #0040ff, 0 0 85px #0000ff;
-    }
