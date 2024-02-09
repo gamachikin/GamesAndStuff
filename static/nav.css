@@ -8,7 +8,7 @@ nav .navitems {
   justify-self: flex-end;
   justify-content: center;
   position: fixed;
-  top: 10px;
+  top: 0;
   font-size: 22px;
   left: 0;
   right: 0;
