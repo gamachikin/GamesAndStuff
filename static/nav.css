@@ -12,7 +12,7 @@ nav .navitems {
   font-size: 22px;
   left: 0;
   right: 0;
-  padding: 0;
+  padding: 0 25px;
   background-color: rgba(255, 255, 255, 0.02);
   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
   backface-visibility: visible;
