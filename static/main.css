@@ -18,8 +18,8 @@ div.siteinfos {
 }
 .mainNAVimage-container {
   display: block;
-  width: 200px; /* Set the desired width */
-  height: 90px; /* Set the desired height */
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
   overflow: hidden; /* Hide overflowing content */
 }
 
