@@ -126,6 +126,6 @@ li:hover .label {
   overflow-clip-margin: content-box;
   display: inline-block; 
   overflow: hidden; 
-  border-radius: 7px; 
+  border-radius: 20px; 
   vertical-align: top; 
   padding-top: 136px;
