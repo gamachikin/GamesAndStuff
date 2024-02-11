@@ -3,14 +3,6 @@
   border-radius: 15px;
   width: 50%; /* Adjust the width as needed */
   height: 65%; /* Adjust the height as needed */
-  position: absolute;
-  left: 1;
-}
-.GameImageContainer {
-  display: block;
-  width: 50px; /* Set the desired width */
-  height: 50px; /* Set the desired height */
-  overflow: hidden; /* Hide overflowing content */
 }
     .GameContainer {
       display: flex;
@@ -24,7 +16,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-right: 20px; /* Adjust as needed */
+      margin-left: 20px; /* Adjust as needed */
       order: 1; /* Display on the left side */
     }
-
