@@ -1,8 +1,10 @@
 body[theme="red and blue"] {
     --text-color: #ffffff;
-        --background: linear-gradient(#e21f1f, #2233cf);
-            --navbar: #e22e2e;
-                --accent: #0284d4;
+    --background: linear-gradient(#e21f1f, #2233cf);
+    --navbar: #e22e2e;
+    --accent: #ffffff;
+    --scrollbar-track: #000000;
+                    
 }
 body[theme="amoled"] {
     --text-color: #ebebeb;
@@ -20,5 +22,6 @@ body[theme="purple"] {
     --text-color: #ffffff;
     --background: linear-gradient(to right, rgb(128, 0, 128) , rgb(75, 0, 130));
     --navbar: #0f0f0f;
-    --accent: #000000;
+    --accent: #ffffff;
+    --scrollbar-track: #000000;
 }
