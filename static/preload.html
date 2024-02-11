@@ -22,7 +22,7 @@
     </div>
   </nav>
   <div style="padding-top: 130px">
-<div class="GameContainer">
+ <div class="GameContainer">
     <div class="FrameContainer">
       <iframe allowfullscreen="true" frameborder="0" id="frame"></iframe>
       <div id="GameInfo">
@@ -30,15 +30,13 @@
           <img id="GameImage" alt="icon" />
         </div>
       </div>
-      <script src="games.js" type="module"></script> <!-- Import the JavaScript file containing game data -->
+      <script src="games.js"></script> <!-- Include the JavaScript file containing game data -->
       <script>
         // Get the game name from the query parameter
         const params = new URLSearchParams(window.location.search);
         const gameName = params.get('game');
 
         // Find the selected game
-        import { games } from './games.js'; // Corrected import statement
-
         const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
 
         if (selectedGame) {
