@@ -45,6 +45,9 @@ div.siteinfos {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent); 
 }
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
 .settings {
   border-radius: 15px;
   position: relative;
