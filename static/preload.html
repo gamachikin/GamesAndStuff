@@ -7,6 +7,7 @@
   <title>Games & Stuff</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
+  <script src="games.js"></script>
 </head>
 <body>
   <nav>
@@ -40,7 +41,7 @@
     // Function to fetch game data from the JSON file
     async function fetchGameData(gameName) {
       try {
-        const response = await fetch('games.json');
+        const response = await fetch('games.js');
         const games = await response.json();
         const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
         if (selectedGame) {
