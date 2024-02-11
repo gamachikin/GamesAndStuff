@@ -260,5 +260,3 @@ const games = [
      image: "/assets/icons/NutSimulator.png",
     },
 ],
-
-export { games };
