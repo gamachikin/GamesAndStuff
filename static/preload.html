@@ -45,26 +45,26 @@
               },
             ];
 
-            // Get the game name from the query parameter
-            const params = new URLSearchParams(window.location.search);
-            const gameName = params.get('game');
+        // Get the game name from the query parameter
+        const params = new URLSearchParams(window.location.search);
+        const gameName = params.get('game');
 
-            // Find the selected game
-            const selectedGame = games.find(game => game.name === gameName);
+        // Find the selected game
+        const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
 
-            if (selectedGame) {
-              // Set the iframe src, game title, and image
-              const iframe = document.getElementById('frame');
-              const gameTitle = document.getElementById('GameTitle');
-              const gameImage = document.getElementById('GameImage');
+        if (selectedGame) {
+        // Set the iframe src, game title, and image
+        const iframe = document.getElementById('frame');
+        const gameTitle = document.getElementById('GameTitle');
+        const gameImage = document.getElementById('GameImage');
 
-              iframe.src = selectedGame.link;
-              gameTitle.textContent = selectedGame.name;
-              gameImage.src = selectedGame.image;
-            } else {
-              console.error('Game not found');
-            }
-          </script>
+        iframe.src = selectedGame.link;
+        gameTitle.textContent = selectedGame.name;
+        gameImage.src = selectedGame.image;
+        } else {
+        console.error('Game not found');
+        }
+        </script>
         </div>
       </div>
     </div>
