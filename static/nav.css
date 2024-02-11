@@ -20,8 +20,8 @@ nav .navitems {
   z-index: 100;
   backdrop-filter: blur(10px);
   margin-top: 16px;
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 nav a {
       color: var(--text);
