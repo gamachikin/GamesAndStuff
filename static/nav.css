@@ -19,9 +19,7 @@ nav .navitems {
   transition: 0.35s ease;
   z-index: 100;
   backdrop-filter: blur(10px);
-  margin-top: 16px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 16px;
 }
 nav a {
       color: var(--text);
