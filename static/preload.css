@@ -12,3 +12,17 @@
   height: 50px; /* Set the desired height */
   overflow: hidden; /* Hide overflowing content */
 }
+.GameContainer {
+      display: flex;
+    }
+
+    .FrameContainer {
+      flex: 1; /* Occupy remaining space */
+    }
+
+    .GameInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 20px; /* Adjust as needed */
+    }
