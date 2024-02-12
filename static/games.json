@@ -1,262 +1,262 @@
 [
-{
-"name": "Breaking The Bank",
-"link": "https://f.silvergames.com/ruffle/player.php?id=1303",
-"image": "/assets/icons/HenryStickminBTB.png"
-},
-{
-"name": "Idle Breakout",
-"link": "https://www.coolmathgames.com/0-idle-breakout/play",
-"image": "/assets/icons/IdleBreakout.png"
-},
-{
-"name": "FNAF 1",
-"link": "https://run3.io/popgame/fnaf/fnaf1/",
-"image": "/assets/icons/FNAF1.png"
-},
-{
-"name": "FNAF 2",
-"link": "https://run3.io/popgame/fnaf/fnaf2.html",
-"image": "/assets/icons/FNAF2.png"
-},
-{
-"name": "FNAF 3",
-"link": "https://run3.io/popgame/fnaf/fnaf3.html",
-"image": "/assets/icons/FNAF3.png"
-},
-{
-"name": "FNAF 4",
-"link": "https://run3.io/popgame/fnaf/fnaf4.html",
-"image": "/assets/icons/FNAF4.png"
-},
-{
-"name": "Duck Life 1",
-"link": "https://www.hoodamath.com/mobile/games/duck-life/game.html",
-"image": "/assets/icons/DuckLife1.png"
-},
-{
-"name": "Duck Life 2",
-"link": "https://www.hoodamath.com/mobile/games/duck-life-2-world-champion/game.html",
-"image": "/assets/icons/DuckLife2.png"
-},
-{
-"name": "Duck Life 3",
-"link": "https://www.hoodamath.com/mobile/games/duck-life-3-evolution/game.html",
-"image": "/assets/icons/DuckLife3.png"
-},
-{
-"name": "Duck Life 4",
-"link": "https://www.hoodamath.com/mobile/games/duck-life-4/game.html",
-"image": "/assets/icons/DuckLife4.png"
-},
-{
-"name": "Duck Life 5",
-"link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-5.xml",
-"image": "/assets/icons/DuckLife5.png"
-},
-{
-"name": "Duck Life 6",
-"link": "https://www.hoodamath.com/mobile/games/duck-life-6-space/game.html",
-"image": "/assets/icons/DuckLife6.png"
-},
-{
-"name": "Super Mario Bros",
-"link": "https://supermario.ee/mario.html",
-"image": "/assets/icons/SuperMarioBros.png"
-},
-{
-"name": "Super Mario Bros 2",
-"link": "https://kiz10.com/upload/games/htmlgames/super-mario-bros-2/index.html",
-"image": "/assets/icons/SuperMarioBros2.jpg"
-},
-{
-"name": "Super Mario Bros 3",
-"link": "https://4gameground.com/nnes/?nsyst2=nes&nsyst=nes&fl=4_Super_Mario_Bro&rom=nes",
-"image": "/assets/icons/SuperMarioBros3.png"
-},
-{
-"name": "Super Mario 64",
-"link": "https://downloads.retrostic.com/play.php?console_slug=n64&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%2064%20%28U%29%20%5B%21%5D.zip",
-"image": "/assets/icons/SuperMario64.png"
-},
-{
-"name": "Escaping The Prison",
-"link": "https://f.silvergames.com/ruffle/player.php?id=1302",
-"image": "/assets/icons/HenryStickminETP.png"
-},
-{
-"name": "Stealing The Diamond",
-"link": "https://f.silvergames.com/ruffle/player.php?id=1301",
-"image": "/assets/icons/HenryStickminSTD.png"
-},
-{
-"name": "Infiltrating The Airship",
-"link": "https://f.silvergames.com/ruffle/player.php?id=3011",
-"image": "/assets/icons/HenryStickminITA.png"
-},
-{
-"name": "Fleeing The Complex",
-"link": "https://f.silvergames.com/ruffle/player.php?id=5195",
-"image": "/assets/icons/HenryStickminFTC.png"
-},
-{
-"name": "Run 3",
-"link": "https://unblocked1889.github.io/R033/tn6pS9dCf37xAhkJv/",
-"image": "/assets/icons/Run3.png"
-},
-{
-"name": "OvO",
-"link": "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml",
-"image": "/assets/icons/OvO.png"
-},
-{
-"name": "Wrestle Bros",
-"link": "https://wrestlebros.io/",
-"image": "/assets/icons/WrestleBros.png"
-},
-{
-"name": "Basket Bros",
-"link": "https://basketbros.io",
-"image": "/assets/icons/BasketBros.png"
-},
-{
-"name": "Monkey Mart",
-"link": "https://slope-game.github.io/newgame/monkey-mart/",
-"image": "/assets/icons/MonkeyMart.png"
-},
-{
-"name": "Subway Surfers",
-"link": "https://kazwire.com/game/static/subway-surfers/index.html",
-"image": "/assets/icons/SubwaySurfers.png"
-},
-{
-"name": "Slope",
-"link": "https://slope-game.github.io/rungame/slope/",
-"image": "/assets/icons/Slope.png"
-},
-{
-"name": "Bitlife",
-"link": "https://bitlifeonline.github.io/class/index.html",
-"image": "/assets/icons/Bitlife.png"
-},
-{
-"name": "Friday Night Funkin'",
-"link": "https://static.playunblocked.com/2021/04/friday-night-funkin/",
-"image": "/assets/icons/FNF.png"
-},
-{
-"name": "JustFall.lol",
-"link": "https://justfall.lol/",
-"image": "/assets/icons/JustFallLOL.png"
-},
-{
-"name": "1v1.lol",
-"link": "https://1v1.lol/",
-"image": "/assets/icons/1v1LOL.png"
-},
-{
-"name": "Backrooms",
-"link": "https://kdata1.com/2022/05/backroom16/",
-"image": "/assets/icons/Backrooms.png"
-},
-{
-"name": "Cookie Clicker",
-"link": "https://webglmath.github.io/cookie-clicker/",
-"image": "/assets/icons/CookieClicker.png"
-},
-{
-"name": "Tiny Fishing",
-"link": "https://www.dob5.com/d/file/games/tiny-fishing/",
-"image": "/assets/icons/TinyFishing.png"
-},
-{
-"name": "Minecraft",
-"link": "https://sd592g.github.io/zj684od4lfg/",
-"image": "/assets/icons/Minecraft.png"
-},
-{
-"name": "Baldi's Basics",
-"link": "https://igroutka.ru/loader/game/26471/",
-"image": "/assets/icons/BaldisBasics.png"
-},
-{
-"name": "Dino Game",
-"link": "https://offline-dino-game.firebaseapp.com/",
-"image": "/assets/icons/DinoGame.png"
-},
-{
-"name": "Flappy Bird",
-"link": "https://flappy-bird.io/flappy-bird.embed",
-"image": "/assets/icons/FlappyBird.png"
-},
-{
-"name": "Crossy Road",
-"link": "https://kazwire.com/game/static/crossy-road/index.html",
-"image": "/assets/icons/CrossyRoad.png"
-},
-{
-"name": "Drive Mad",
-"link": "https://g.vseigru.net/10/igra-dzhipy-bezumnoe-vozhdenie/",
-"image": "/assets/icons/DriveMad.png"
-},
-{
-"name": "Powerline.io",
-"link": "https://powerline.io/",
-"image": "/assets/icons/Powerlineio.png"
-},
-{
-"name": "Paper.io",
-"link": "https://games.voodoo.io/paperio2/",
-"image": "/assets/icons/Paperio.png"
-},
-{
-"name": "Krunker.io",
-"link": "https://krunker.io/",
-"image": "/assets/icons/Krunkerio.png"
-},
-{
-"name": "Hole.io",
-"link": "https://hole-io.com/",
-"image": "/assets/icons/Holeio.png"
-},
-{
-"name": "Sonic The Hedgehog",
-"link": "https://megadrive-emulator.com/game/?game=Sonic_the_Hedgehog.bin",
-"image": "/assets/icons/SonicTheHedgehog.png"
-},
-{
-"name": "Sonic The Hedgehog 2",
-"link": "https://megadrive-emulator.com/game/?game=Sonic_the_Hedgehog_2_JUE.bin",
-"image": "/assets/icons/SonicTheHedgehog2.png"
-},
-{
-"name": "Tunnel Rush",
-"link": "https://webglmath.github.io/tunnel-rush/"
-"image": "/assets/icons/TunnelRush.png"
-},
-{
-"name": "Clicker Heroes",
-"link": "https://www.gameslol.net/data/clicker-heroes/index.html",
-"image": "/assets/icons/ClickerHeroes.png"
-},
-{
-"name": "Retro Bowl",
-"link": "https://retrobowlmod.com/retro-bowl.embed",
-"image": "/assets/icons/RetroBowl.png"
-},
-{
-"name": "Osw!",
-"link": "https://joshua-usi.github.io/osw",
-"image": "/assets/icons/osw.png"
-},
-{
-"name": "A Dance Of Fire And Ice",
-"link": "https://kazwire.com/game/static/a-dance-of-fire-and-ice/index.html",
-"image": "/assets/icons/ADOFAI.png"
-},
-{
-"name": "Nut Simulator",
-"link": "https://nutsimulator.github.io/index.html",
-"image": "/assets/icons/NutSimulator.png"
-},
+ {
+  "name": "Breaking The Bank",
+  "link": "https://f.silvergames.com/ruffle/player.php?id=1303",
+  "image": "/assets/icons/HenryStickminBTB.png"
+ },
+ {
+  "name": "Idle Breakout",
+  "link": "https://www.coolmathgames.com/0-idle-breakout/play",
+  "image": "/assets/icons/IdleBreakout.png"
+ },
+ {
+  "name": "FNAF 1",
+  "link": "https://run3.io/popgame/fnaf/fnaf1/",
+  "image": "/assets/icons/FNAF1.png"
+ },
+ {
+  "name": "FNAF 2",
+  "link": "https://run3.io/popgame/fnaf/fnaf2.html",
+  "image": "/assets/icons/FNAF2.png"
+ },
+ {
+  "name": "FNAF 3",
+  "link": "https://run3.io/popgame/fnaf/fnaf3.html",
+  "image": "/assets/icons/FNAF3.png"
+ },
+ {
+  "name": "FNAF 4",
+  "link": "https://run3.io/popgame/fnaf/fnaf4.html",
+  "image": "/assets/icons/FNAF4.png"
+ },
+ {
+  "name": "Duck Life 1",
+  "link": "https://www.hoodamath.com/mobile/games/duck-life/game.html",
+  "image": "/assets/icons/DuckLife1.png"
+ },
+ {
+  "name": "Duck Life 2",
+  "link": "https://www.hoodamath.com/mobile/games/duck-life-2-world-champion/game.html",
+  "image": "/assets/icons/DuckLife2.png"
+ },
+ {
+  "name": "Duck Life 3",
+  "link": "https://www.hoodamath.com/mobile/games/duck-life-3-evolution/game.html",
+  "image": "/assets/icons/DuckLife3.png"
+ },
+ {
+  "name": "Duck Life 4",
+  "link": "https://www.hoodamath.com/mobile/games/duck-life-4/game.html",
+  "image": "/assets/icons/DuckLife4.png"
+ },
+ {
+  "name": "Duck Life 5",
+  "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-5.xml",
+  "image": "/assets/icons/DuckLife5.png"
+ },
+ {
+  "name": "Duck Life 6",
+  "link": "https://www.hoodamath.com/mobile/games/duck-life-6-space/game.html",
+  "image": "/assets/icons/DuckLife6.png"
+ },
+ {
+  "name": "Super Mario Bros",
+  "link": "https://supermario.ee/mario.html",
+  "image": "/assets/icons/SuperMarioBros.png"
+ },
+ {
+  "name": "Super Mario Bros 2",
+  "link": "https://kiz10.com/upload/games/htmlgames/super-mario-bros-2/index.html",
+  "image": "/assets/icons/SuperMarioBros2.jpg"
+ },
+ {
+  "name": "Super Mario Bros 3",
+  "link": "https://4gameground.com/nnes/?nsyst2=nes&nsyst=nes&fl=4_Super_Mario_Bro&rom=nes",
+  "image": "/assets/icons/SuperMarioBros3.png"
+ },
+ {
+  "name": "Super Mario 64",
+  "link": "https://downloads.retrostic.com/play.php?console_slug=n64&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%2064%20%28U%29%20%5B%21%5D.zip",
+  "image": "/assets/icons/SuperMario64.png"
+ },
+ {
+  "name": "Escaping The Prison",
+  "link": "https://f.silvergames.com/ruffle/player.php?id=1302",
+  "image": "/assets/icons/HenryStickminETP.png"
+ },
+ {
+  "name": "Stealing The Diamond",
+  "link": "https://f.silvergames.com/ruffle/player.php?id=1301",
+  "image": "/assets/icons/HenryStickminSTD.png"
+ },
+ {
+  "name": "Infiltrating The Airship",
+  "link": "https://f.silvergames.com/ruffle/player.php?id=3011",
+  "image": "/assets/icons/HenryStickminITA.png"
+ },
+ {
+  "name": "Fleeing The Complex",
+  "link": "https://f.silvergames.com/ruffle/player.php?id=5195",
+  "image": "/assets/icons/HenryStickminFTC.png"
+ },
+ {
+  "name": "Run 3",
+  "link": "https://unblocked1889.github.io/R033/tn6pS9dCf37xAhkJv/",
+  "image": "/assets/icons/Run3.png"
+ },
+ {
+  "name": "OvO",
+  "link": "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml",
+  "image": "/assets/icons/OvO.png"
+ },
+ {
+  "name": "Wrestle Bros",
+  "link": "https://wrestlebros.io/",
+  "image": "/assets/icons/WrestleBros.png"
+ },
+ {
+  "name": "Basket Bros",
+  "link": "https://basketbros.io",
+  "image": "/assets/icons/BasketBros.png"
+ },
+ {
+  "name": "Monkey Mart",
+  "link": "https://slope-game.github.io/newgame/monkey-mart/",
+  "image": "/assets/icons/MonkeyMart.png"
+ },
+ {
+  "name": "Subway Surfers",
+  "link": "https://kazwire.com/game/static/subway-surfers/index.html",
+  "image": "/assets/icons/SubwaySurfers.png"
+ },
+ {
+  "name": "Slope",
+  "link": "https://slope-game.github.io/rungame/slope/",
+  "image": "/assets/icons/Slope.png"
+ },
+ {
+  "name": "Bitlife",
+  "link": "https://bitlifeonline.github.io/class/index.html",
+  "image": "/assets/icons/Bitlife.png"
+ },
+ {
+  "name": "Friday Night Funkin'",
+  "link": "https://static.playunblocked.com/2021/04/friday-night-funkin/",
+  "image": "/assets/icons/FNF.png"
+ },
+ {
+  "name": "JustFall.lol",
+  "link": "https://justfall.lol/",
+  "image": "/assets/icons/JustFallLOL.png"
+ },
+ {
+  "name": "1v1.lol",
+  "link": "https://1v1.lol/",
+  "image": "/assets/icons/1v1LOL.png"
+ },
+ {
+  "name": "Backrooms",
+  "link": "https://kdata1.com/2022/05/backroom16/",
+  "image": "/assets/icons/Backrooms.png"
+ },
+ {
+  "name": "Cookie Clicker",
+  "link": "https://webglmath.github.io/cookie-clicker/",
+  "image": "/assets/icons/CookieClicker.png"
+ },
+ {
+  "name": "Tiny Fishing",
+  "link": "https://www.dob5.com/d/file/games/tiny-fishing/",
+  "image": "/assets/icons/TinyFishing.png"
+ },
+ {
+  "name": "Minecraft",
+  "link": "https://sd592g.github.io/zj684od4lfg/",
+  "image": "/assets/icons/Minecraft.png"
+ },
+ {
+  "name": "Baldi's Basics",
+  "link": "https://igroutka.ru/loader/game/26471/",
+  "image": "/assets/icons/BaldisBasics.png"
+ },
+ {
+  "name": "Dino Game",
+  "link": "https://offline-dino-game.firebaseapp.com/",
+  "image": "/assets/icons/DinoGame.png"
+ },
+ {
+  "name": "Flappy Bird",
+  "link": "https://flappy-bird.io/flappy-bird.embed",
+  "image": "/assets/icons/FlappyBird.png"
+ },
+ {
+  "name": "Crossy Road",
+  "link": "https://kazwire.com/game/static/crossy-road/index.html",
+  "image": "/assets/icons/CrossyRoad.png"
+ },
+ {
+  "name": "Drive Mad",
+  "link": "https://g.vseigru.net/10/igra-dzhipy-bezumnoe-vozhdenie/",
+  "image": "/assets/icons/DriveMad.png"
+ },
+ {
+  "name": "Powerline.io",
+  "link": "https://powerline.io/",
+  "image": "/assets/icons/Powerlineio.png"
+ },
+ {
+  "name": "Paper.io",
+  "link": "https://games.voodoo.io/paperio2/",
+  "image": "/assets/icons/Paperio.png"
+ },
+ {
+  "name": "Krunker.io",
+  "link": "https://krunker.io/",
+  "image": "/assets/icons/Krunkerio.png"
+ },
+ {
+  "name": "Hole.io",
+  "link": "https://hole-io.com/",
+  "image": "/assets/icons/Holeio.png"
+ },
+ {
+  "name": "Sonic The Hedgehog",
+  "link": "https://megadrive-emulator.com/game/?game=Sonic_the_Hedgehog.bin",
+  "image": "/assets/icons/SonicTheHedgehog.png"
+ },
+ {
+  "name": "Sonic The Hedgehog 2",
+  "link": "https://megadrive-emulator.com/game/?game=Sonic_the_Hedgehog_2_JUE.bin",
+  "image": "/assets/icons/SonicTheHedgehog2.png"
+ },
+ {
+  "name": "Tunnel Rush",
+  "link": "https://webglmath.github.io/tunnel-rush/"
+  "image": "/assets/icons/TunnelRush.png"
+ },
+ {
+  "name": "Clicker Heroes",
+  "link": "https://www.gameslol.net/data/clicker-heroes/index.html",
+  "image": "/assets/icons/ClickerHeroes.png"
+ },
+ {
+  "name": "Retro Bowl",
+  "link": "https://retrobowlmod.com/retro-bowl.embed",
+  "image": "/assets/icons/RetroBowl.png"
+ },
+ {
+  "name": "Osw!",
+  "link": "https://joshua-usi.github.io/osw",
+  "image": "/assets/icons/osw.png"
+ },
+ {
+  "name": "A Dance Of Fire And Ice",
+  "link": "https://kazwire.com/game/static/a-dance-of-fire-and-ice/index.html",
+  "image": "/assets/icons/ADOFAI.png"
+ },
+ {
+  "name": "Nut Simulator",
+  "link": "https://nutsimulator.github.io/index.html",
+  "image": "/assets/icons/NutSimulator.png"
+ },
 ],
