@@ -4,7 +4,6 @@
   width: 50%; /* Adjust the width as needed */
   height: 65%; /* Adjust the height as needed */
   position: absolute;
-  flex: 1;
 }
 .GameContainer {
   display: flex;
