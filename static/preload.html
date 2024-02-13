@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="Games & Stuff Logo (1).png" type="image/png">
   <title>Games & Stuff</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="preload.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="themes.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <nav>
+ <div id="navbarToggle" class="arrow-down"></div>
     <p id="time"></p>
     <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 15px">
       <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
@@ -69,6 +72,20 @@
     } else {
         console.error('No game specified');
     }
+</script>
+<script>
+document.getElementById('navbarToggle').addEventListener('click', function() {
+  var navItems = document.querySelector('.navitems');
+  if (navItems.style.display === 'none' || navItems.style.display === '') {
+    navItems.style.display = 'block';
+    document.getElementById('navbarToggle').classList.remove('arrow-down');
+    document.getElementById('navbarToggle').classList.add('arrow-up');
+  } else {
+    navItems.style.display = 'none';
+    document.getElementById('navbarToggle').classList.remove('arrow-up');
+    document.getElementById('navbarToggle').classList.add('arrow-down');
+  }
+});
 </script>
 </body>
 </html>
