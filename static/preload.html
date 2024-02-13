@@ -39,36 +39,36 @@
   <script>
     // Function to fetch game data from the JSON file
     async function fetchGameData(gameName) {
-      try {
-        const response = await fetch('games.json');
-        const games = await response.json();
-        const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
-        if (selectedGame) {
-          const iframe = document.getElementById('frame');
-          const gameTitle = document.getElementById('GameTitle');
-          const gameImage = document.getElementById('GameImage');
-          const gameDescription = document.getElementById('GameDescription');
+        try {
+            const response = await fetch('games.json');
+            const games = await response.json();
+            const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
+            if (selectedGame) {
+                const iframe = document.getElementById('frame');
+                const gameTitle = document.getElementById('GameTitle');
+                const gameImage = document.getElementById('GameImage');
+                const gameDescription = document.getElementById('GameDescription');
 
-          iframe.src = selectedGame.link;
-          gameTitle.textContent = selectedGame.name;
-          gameImage.src = selectedGame.image;
-          gameDescription.textContent = selectedGame.description;
-        } else {
-          console.error('Game not found');
+                iframe.src = selectedGame.link;
+                gameTitle.textContent = selectedGame.name;
+                gameImage.src = selectedGame.image;
+                gameDescription.textContent = selectedGame.description;
+            } else {
+                console.error('Game not found');
+            }
+        } catch (error) {
+            console.error('Error fetching game data:', error);
         }
-      } catch (error) {
-        console.error('Error fetching game data:', error);
-      }
     }
 
     // Get the game name from the query parameter
     const params = new URLSearchParams(window.location.search);
     const gameName = params.get('game');
     if (gameName) {
-      fetchGameData(gameName);
+        fetchGameData(gameName).catch(error => console.error('Error in fetchGameData:', error));
     } else {
-      console.error('No game specified');
+        console.error('No game specified');
     }
-  </script>
+</script>
 </body>
 </html>
