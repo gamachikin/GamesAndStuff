@@ -17,10 +17,10 @@
 }
 
 .GameImageContainer {
-  float: left;
-  margin-right: 20px;
+  float: right;
+  margin-left: 20px;
   width: 50px; /* Set the desired width */
-  height: 50px; /* Set the desired height */
+  height: auto; /* Set the desired height */
   overflow: hidden; /* Hide overflowing content */
 }
 
@@ -31,5 +31,15 @@
 
 .GameDescription {
   margin-top: 10px;
+  clear: both;
+}
+.GameContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
+.GameInfo {
+  max-width: 300px;
+  margin-top: 20px;
+}
