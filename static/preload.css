@@ -4,7 +4,9 @@
   width: 50%; /* Adjust the width as needed */
   height: 65%; /* Adjust the height as needed */
   position: absolute;
-  right: 1;
+  flex: 1;
+  float: left;
+  margin-right: 20px;
 }
 .GameContainer {
   display: flex;
@@ -14,8 +16,6 @@
 
 .FrameContainer {
   flex: 1;
-  float: left;
-  margin-right: 20px;
 }
 
 .GameImageContainer {
