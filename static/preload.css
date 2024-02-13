@@ -5,19 +5,11 @@
   height: 65%; /* Adjust the height as needed */
   position: absolute;
   flex: 1;
-  float: left;
-  margin-right: 20px;
 }
 .GameContainer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-}
-
-.FrameContainer {
-  flex: 1;
-  float: left;
-  margin-right: 20px;
 }
 
 .GameImageContainer {
