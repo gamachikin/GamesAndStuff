@@ -14,11 +14,14 @@
 
 .FrameContainer {
   flex: 1;
+  float: left;
+  margin-right: 20px;
 }
 
 .GameImageContainer {
   float: right;
   margin-left: 20px;
+  margin-top: 50px; 
   width: 50px; /* Set the desired width */
   height: 50px; /* Set the desired height */
   overflow: hidden; /* Hide overflowing content */
@@ -27,7 +30,7 @@
 .GameTitle {
   font-size: 24px;
   font-weight: bold;
-  margin-left: 25px;
+  margin-top: 50px;
 }
 
 .GameDescription {
