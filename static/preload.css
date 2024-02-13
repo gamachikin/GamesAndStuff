@@ -5,8 +5,8 @@
   height: 65%; /* Adjust the height as needed */
   position: absolute;
   flex: 1;
-  float: left;
-  margin-right: 20px;
+  float: right;
+  margin-left: 20px;
 }
 .GameContainer {
   display: flex;
@@ -36,9 +36,4 @@
 .GameDescription {
   margin-top: 10px;
   clear: both;
-}
-
-.GameInfo {
-  max-width: 300px;
-  margin-top: 20px;
 }
