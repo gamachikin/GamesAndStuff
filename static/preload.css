@@ -4,6 +4,7 @@
   width: 50%; /* Adjust the width as needed */
   height: 65%; /* Adjust the height as needed */
   position: absolute;
+  flex: 1;
   float: left;
   margin-right: 20px;
 }
@@ -14,6 +15,7 @@
 }
 
 .FrameContainer {
+  flex: 1;
   float: left;
   margin-right: 20px;
 }
