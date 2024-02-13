@@ -6,24 +6,30 @@
   position: absolute;
   left: 1;
 }
+.GameContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.FrameContainer {
+  flex: 1;
+}
+
 .GameImageContainer {
-  display: block;
+  float: left;
+  margin-right: 20px;
   width: 50px; /* Set the desired width */
   height: 50px; /* Set the desired height */
   overflow: hidden; /* Hide overflowing content */
 }
-    .GameContainer {
-      display: flex;
-    }
 
-    .FrameContainer {
-      order: 2; /* Display on the right side */
-    }
+.GameTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    .GameInfo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: 20px; /* Adjust as needed */
-      order: 1; /* Display on the left side */
-    }
+.GameDescription {
+  margin-top: 10px;
+}
+
