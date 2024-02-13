@@ -30,16 +30,6 @@
   margin-top: 10px;
   clear: both;
 }
-/* Add this to your existing CSS */
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid black;
-  margin: 0 auto;
-  cursor: pointer;
-}
 nav .navitems {
   display: none;
   align-items: center;
@@ -73,4 +63,70 @@ nav a {
   align-items: center;
   transition: 0.4s all;
   display: flex;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.toggle-btn span {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.navitems-container {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.navbar.show {
+  padding: 20px;
+}
+
+.navbar.show .toggle-btn span:nth-child(1) {
+  transform: rotate(-45deg) translate(-3px, 6px);
+}
+
+.navbar.show .toggle-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar.show .toggle-btn span:nth-child(3) {
+  transform: rotate(45deg) translate(-3px, -6px);
+}
+
+.navbar.show + .content {
+  transition: transform 0.3s ease;
+  transform: translateY(250px);
+}
+
+.content {
+  transition: transform 0.3s ease;
+}
+
+.content.push-down {
+  transform: translateY(250px);
+}
+body {
+      font-size: large;
+          font-family: 'lato';
+              
 }
