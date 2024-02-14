@@ -13,11 +13,12 @@
 
 .GameImageContainer {
   float: right;
-  margin-left: 10px;
+  margin-right: 60px;
   margin-top: 60px; 
   position: absolute;
   width: 50px;
   height: 50px;
+  overflow: hidden;
 }
 
 .GameTitle {
