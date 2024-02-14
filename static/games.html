@@ -43,7 +43,7 @@
             image.alt = game.name;
 
             const name = document.createElement('p');
-            name.textContent = game.name.length > 20 ? game.name.substring(0, 20) + '...' : game.name; // Limiting characters
+            name.textContent = game.name.length > 17 ? game.name.substring(0, 20) + '...' : game.name; // Limiting characters
             
             link.appendChild(image);
             card.appendChild(link);
