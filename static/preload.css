@@ -13,8 +13,7 @@
 
 .GameImageContainer {
   float: right;
-  margin-right: 60px;
-  margin-top: 60px; 
+  margin-left: 60px; 
   position: absolute;
   width: 50px;
   height: 50px;
@@ -34,7 +33,7 @@
 .GameInfo {
   background-color: rgba(255, 255, 255, 0.13);
   border-radius: 15px;
-  width: 39.8%; /* Adjust the width as needed */
+  width: 39%; /* Adjust the width as needed */
   height: 75%; /* Adjust the height as needed */
   position: absolute;
   right: 0;
