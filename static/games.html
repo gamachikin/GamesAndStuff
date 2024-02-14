@@ -32,12 +32,11 @@ fetch('games.json')
     const gameCardsContainer = document.getElementById('game-cards');
     
     data.forEach(game => {
-      const card = document.createElement('div');
+      const card = document.createElement('a');
+      card.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
+      card.target = '_blank';
       card.className = 'card';
 
-      const link = document.createElement('a');
-      link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
-      
       const image = document.createElement('img');
       image.src = game.image;
       image.alt = game.name;
@@ -45,8 +44,7 @@ fetch('games.json')
       const name = document.createElement('p');
       name.textContent = game.name;
 
-      link.appendChild(image);
-      card.appendChild(link);
+      card.appendChild(image);
       card.appendChild(name);
       
       gameCardsContainer.appendChild(card);
@@ -54,7 +52,7 @@ fetch('games.json')
   })
   .catch(error => console.error('Error fetching data:', error));
 </script>
-
+  
   <script src="/index.js"></script>
 </div>
 </body>
