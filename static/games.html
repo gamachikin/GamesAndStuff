@@ -25,7 +25,7 @@
 <div style="padding-top: 125px">
  <div id="game-cards"></div>
 
-  <script>
+<script>
 fetch('games.json')
   .then(response => response.json())
   .then(data => {
@@ -35,6 +35,10 @@ fetch('games.json')
       const card = document.createElement('div');
       card.className = 'card';
 
+      const link = document.createElement('a');
+      link.href = game.link;
+      link.target = '_blank'; // Open link in a new tab
+
       const image = document.createElement('img');
       image.src = game.image;
       image.alt = game.name;
@@ -42,7 +46,8 @@ fetch('games.json')
       const name = document.createElement('p');
       name.textContent = game.name;
 
-      card.appendChild(image);
+      link.appendChild(image);
+      card.appendChild(link);
       card.appendChild(name);
       
       gameCardsContainer.appendChild(card);
