@@ -7,6 +7,7 @@ nav .navitems {
   opacity: 1;
   justify-self: flex-end;
   justify-content: center;
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   font-size: 22px;
