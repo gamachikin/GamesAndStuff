@@ -36,8 +36,8 @@ fetch('games.json')
       card.className = 'card';
 
       const link = document.createElement('a');
-      link.href = game.link;
-      link.target = '_blank'; // Open link in a new tab
+      link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
+      link.target = '_blank'; // Abrir el enlace en una nueva pestaña
 
       const image = document.createElement('img');
       image.src = game.image;
