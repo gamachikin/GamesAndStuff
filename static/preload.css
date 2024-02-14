@@ -1,6 +1,6 @@
 .GameContainer iframe {
   border-radius: 15px;
-  width: 50%; /* Adjust the width as needed */
+  width: 48%; /* Adjust the width as needed */
   height: 65%; /* Adjust the height as needed */
   position: absolute;
   left: 0;
@@ -32,9 +32,9 @@
   clear: both;
 }
 .GameInfo {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.02);
   border-radius: 15px;
-  width: 50%; /* Adjust the width as needed */
+  width: 48%; /* Adjust the width as needed */
   height: 65%; /* Adjust the height as needed */
   position: absolute;
   right: 0;
