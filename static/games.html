@@ -23,45 +23,33 @@
                         </div>
   </nav>
 <div style="padding-top: 125px">
-  <h1>Game List</h1>
-
-  <ul id="gameList"></ul>
+ <div id="game-cards"></div>
 
   <script>
-    // Fetch game information from preload.html
-    fetch('preload.html')
-      .then(response => response.text())
-      .then(data => {
-        const parser = new DOMParser();
-        const preloadDocument = parser.parseFromString(data, 'text/html');
-        const games = preloadDocument.defaultView.games;
+fetch('games.json')
+  .then(response => response.json())
+  .then(data => {
+    const gameCardsContainer = document.getElementById('game-cards');
+    
+    data.forEach(game => {
+      const card = document.createElement('div');
+      card.className = 'card';
 
-        // Populate the game list
-        const gameList = document.getElementById('gameList');
-        for (const game in games) {
-          if (games.hasOwnProperty(game)) {
-            const gameInfo = games[game];
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `
-              <a href="${gameInfo.url}">
-                <div class="GameContainer">
-                  <div class="FrameContainer">
-                    <iframe src="${gameInfo.url}" allowfullscreen="true" frameborder="0"></iframe>
-                    <div class="GameInfo">
-                      <div class="GameTitle">${game}</div>
-                      <img class="GameImage" src="${gameInfo.image}" alt="Game Image">
-                      <p>${gameInfo.description}</p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            `;
-            gameList.appendChild(listItem);
-          }
-        }
-      })
-      .catch(error => console.error('Error fetching game information:', error));
-  </script>
+      const image = document.createElement('img');
+      image.src = game.image;
+      image.alt = game.name;
+
+      const name = document.createElement('p');
+      name.textContent = game.name;
+
+      card.appendChild(image);
+      card.appendChild(name);
+      
+      gameCardsContainer.appendChild(card);
+    });
+  })
+  .catch(error => console.error('Error fetching data:', error));
+</script>
 
   <script src="/index.js"></script>
 </div>
