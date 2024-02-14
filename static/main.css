@@ -132,3 +132,20 @@ li:hover .label {
   border-radius: 20px; 
   vertical-align: top; 
   padding-top: 136px;
+}
+.card {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin-top: 10px;
+}
