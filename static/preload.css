@@ -15,15 +15,16 @@
   float: right;
   margin-left: 20px;
   margin-top: 50px; 
-  width: 50px; /* Set the desired width */
-  height: 50px; /* Set the desired height */
+  position: absolute;
+  width: 60px;
+  height: 60px;
   overflow: hidden; /* Hide overflowing content */
 }
 
 .GameTitle {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .GameDescription {
