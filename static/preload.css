@@ -39,3 +39,8 @@
   height: 75%; /* Adjust the height as needed */
   position: absolute;
   right: 0;
+}
+img#GameImage {
+  width: 100%;
+  height: 100%;
+}
