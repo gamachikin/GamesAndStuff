@@ -37,8 +37,7 @@ fetch('games.json')
 
       const link = document.createElement('a');
       link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
-      link.target = '_blank'; // Abrir el enlace en una nueva pestaña
-
+      
       const image = document.createElement('img');
       image.src = game.image;
       image.alt = game.name;
