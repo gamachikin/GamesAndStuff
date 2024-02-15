@@ -2,32 +2,38 @@
   {
     "name": "Breaking The Bank",
     "link": "https://f.silvergames.com/ruffle/player.php?id=1303",
-    "image": "/assets/icons/HenryStickminBTB.png"
+    "image": "/assets/icons/HenryStickminBTB.png",
+    "description": "Breaking the Bank is a 2008 video game directed by Marcus Bromander. In the game, Henry Stickmin tries to break into a bank in the middle of the desert to steal its vault."
   },
   {
     "name": "Idle Breakout",
     "link": "https://html-classic.itch.zone/html/9150519/index.html",
-    "image": "/assets/icons/IdleBreakout.png"
+    "image": "/assets/icons/IdleBreakout.png",
+    "description": "Idle Breakout is a free, idle strategy game where players break bricks using a paddle and a bouncing ball."
   },
   {
     "name": "FNAF 1",
     "link": "https://run3.io/popgame/fnaf/fnaf1/",
-    "image": "/assets/icons/FNAF1.png"
+    "image": "/assets/icons/FNAF1.png",
+    "description": "Five Nights at Freddy's is a 2014 video game where the player takes on the role of Mike Schmidt, a security guard at Freddy Fazbear's Pizza. The player must survive five nights at the restaurant without being caught by the animatronics that roam the facility at night."
   },
   {
     "name": "FNAF 2",
     "link": "https://run3.io/popgame/fnaf/fnaf2.html",
-    "image": "/assets/icons/FNAF2.png"
+    "image": "/assets/icons/FNAF2.png",
+    "discription": "Five Nights at Freddy's 2 is a point-and-click survival horror video game. You must survive five nights without being caught by the animatronic characters that roam the building."
   },
   {
     "name": "FNAF 3",
     "link": "https://run3.io/popgame/fnaf/fnaf3.html",
-    "image": "/assets/icons/FNAF3.png"
+    "image": "/assets/icons/FNAF3.png",
+    "description": "Five Nights at Freddy's 3 is a point-and-click survival horror video game released in 2015. In the game, the player takes on the role of a security guard at a haunted amusement park called Fazbear's Fright. The player's goal is to survive their shift without being killed by a homicidal animatronic."
   },
   {
     "name": "FNAF 4",
     "link": "https://run3.io/popgame/fnaf/fnaf4.html",
-    "image": "/assets/icons/FNAF4.png"
+    "image": "/assets/icons/FNAF4.png",
+    "description": "Five Nights at Freddy's 4 is a point-and-click survival horror game. In the game, you play as a child who must survive the night in a house full of terrors."
   },
   {
     "name": "Duck Life 1",
@@ -131,9 +137,9 @@
   },
   {
     "name": "Slope",
-    "link": "https://slope-game.github.io/rungame/slope/",
+    "link": "https://kdata1.com/2020/05/slope/",
     "image": "/assets/icons/Slope.png",
-    "description": "honestly just a test"
+    "description": "Slope is a 3D space run game where you control a ball rolling down a slope. The game's goal is to keep the ball straight, avoid obstacles, and boost speed while trying to break your record."
   },
   {
     "name": "Bitlife",
@@ -249,6 +255,11 @@
     "name": "Retro Bowl",
     "link": "https://retrobowlmod.com/retro-bowl.embed",
     "image": "/assets/icons/RetroBowl.png"
+  },
+  {
+    "name": "Sigmally (Agar.Io)",
+    "link": "https://sigmally.com",
+    "image": "/assets/icons/AgarIo.png"
   },
   {
     "name": "Osw!",
