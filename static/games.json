@@ -6,7 +6,7 @@
   },
   {
     "name": "Idle Breakout",
-    "link": "https://www.coolmathgames.com/0-idle-breakout/play",
+    "link": "https://html-classic.itch.zone/html/9150519/index.html",
     "image": "/assets/icons/IdleBreakout.png"
   },
   {
@@ -132,7 +132,8 @@
   {
     "name": "Slope",
     "link": "https://slope-game.github.io/rungame/slope/",
-    "image": "/assets/icons/Slope.png"
+    "image": "/assets/icons/Slope.png",
+    "description": "honestly just a test"
   },
   {
     "name": "Bitlife",
@@ -206,7 +207,7 @@
   },
   {
     "name": "Paper.io",
-    "link": "https://games.voodoo.io/paperio2/",
+    "link": "https://paper-io.com/",
     "image": "/assets/icons/Paperio.png"
   },
   {
@@ -218,6 +219,11 @@
     "name": "Hole.io",
     "link": "https://hole-io.com/",
     "image": "/assets/icons/Holeio.png"
+  },
+  {
+    "name": "Shell Shockers",
+    "link": "https://shellshock.io/",
+    "image": "/assets/icons/ShellShockers.png"
   },
   {
     "name": "Sonic The Hedgehog",
