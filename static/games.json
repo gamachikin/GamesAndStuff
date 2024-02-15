@@ -276,4 +276,46 @@
     "link": "https://nutsimulator.github.io/index.html",
     "image": "/assets/icons/NutSimulator.png"
   }
+  {
+    "name": "Riddle School",
+    "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-school.xml",
+    "image": "/assets/icons/RiddleS.png",
+    "description": "In Riddle School, you play as Phil and must use your intelligence and wit to escape the school. You can interact with objects in the classrooms and hallways, try to confuse teachers, and leave the school."
+  }
+  {
+    "name": "Riddle School 2",
+    "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-school-2.xml",
+    "image": "/assets/icons/RiddleS2.png",
+    "description": "Riddle School 2 is a point-click game developed by JonBro. In the game, you play as Phil, a character who is trying to escape a school full of puzzles, mysteries, and humor."
+  }
+  {
+    "name": "Riddle School 3",
+    "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-school-3.xml",
+    "image": "/assets/icons/RiddleS3.png",
+    "description": "Riddle School 3 is a short, point-and-click, graphic adventure game. In the game, you play as Phil Eggtree, a student who is trying to escape school."
+  }
+  {
+    "name": "Riddle School 4",
+    "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-school-4.xml",
+    "image": "/assets/icons/RiddleS4.png",
+    "description": "Riddle School 4 is a free, online, point-and-click, escape room puzzle game. In the game, you play as Phil Eggtree, a student who is trying to escape Riddle University."
+  }
+  {
+    "name": "Riddle School 5",
+    "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-school-5.xml",
+    "image": "/assets/icons/RiddleS5.png",
+    "description": "Riddle School 5 is a point-and-click escape puzzle game where you play as Phil Eggtree. In this game, you must find an exit from a spaceship, not a school. You must use objects in the area to stop a group of aliens from threatening Earth."
+  }
+  {
+    "name": "Riddle Transfer",
+    "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Friddle-transfer.xml",
+    "image": "/assets/icons/RiddleT.png",
+    "description": "In Riddle Transfer, you and your four alien friends are imprisoned by humans after an adventure in space. The game begins after finishing Riddle School 5."
+  }
+  {
+    "name": "Riddle Transfer 2",
+    "link": "https://www.miniplay.com/helpers/game/sandbox.php?mp_assets=https%3A%2F%2Fs2.minijuegosgratis.com%2F&mp_embed=0&mp_game_id=215341&mp_game_uid=riddle-transfer-2&mp_game_url=https%3A%2F%2Fwww.miniplay.com%2Fembed%2Friddle-transfer-2&mp_int=1&mp_locale=en_US&mp_player_type=FLASH&mp_player_url=aHR0cHM6Ly93d3cubWluaWp1ZWdvc2dyYXRpcy5jb20vdjMvZ2FtZXMvZ2FtZXMvcHJvZC8yMTUzNDEvcmlkZGxldHJhbnNmZXIyLnN3Zg%3D%3D&mp_site_https_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_site_name=miniplay.com&mp_site_url=https%3A%2F%2Fwww.miniplay.com%2F&mp_timezone=America%2FNew_York&mp_view_type=",
+    "image": "/assets/icons/RiddleT2.png",
+    "description": "Riddle Transfer 2 is a point-and-click adventure game where you solve puzzles and search for hints. The game starts with a cutscene where the main characters are being chased by guards in the sewers."
+  }
 ]
