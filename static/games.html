@@ -32,19 +32,23 @@
       const gameCardsContainer = document.getElementById('game-cards');
       
       data.forEach(game => {
-        const card = document.createElement('a'); // Change from div to a element
+        const card = document.createElement('div');
         card.className = 'card';
-        card.href = `/preload.html?game=${encodeURIComponent(game.name)}`; // Set the href for the entire card
-
+        
+        const link = document.createElement('a');
+        link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
+        
         const image = document.createElement('img');
         image.src = game.image;
         image.alt = game.name;
-
+        
         const name = document.createElement('p');
         name.textContent = game.name;
         
-        card.appendChild(image);
+        card.appendChild(link);
         card.appendChild(name);
+        
+        link.appendChild(image);
         
         gameCardsContainer.appendChild(card);
       });
