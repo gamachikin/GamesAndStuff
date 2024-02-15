@@ -33,6 +33,17 @@
            <img id="GameImage" alt="game image">
           </div>
         <div class="GameDescription" id="GameDescription"></div>
+        <div class="GameButtons">
+          <button onclick="toggleFullScreen()">
+            <img src="fullscreen_image.png" alt="Fullscreen">
+          </button>
+          <button onclick="reloadPage()">
+            <img src="reload_image.png" alt="Reload">
+          </button>
+          <button onclick="goHome()">
+            <img src="home_image.png" alt="Home">
+          </button>
+        </div>
     </div>
     </div>
   </div>
@@ -70,6 +81,26 @@
     } else {
         console.error('No game specified');
     }
-</script>
+
+    // Function to toggle fullscreen mode
+    function toggleFullScreen() {
+        const iframe = document.getElementById('frame');
+        if (!document.fullscreenElement) {
+            iframe.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
+    // Function to reload the page
+    function reloadPage() {
+        location.reload();
+    }
+
+    // Function to navigate back to the home page
+    function goHome() {
+        window.location.href = '/';
+    }
+  </script>
 </body>
 </html>
