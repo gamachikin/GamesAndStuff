@@ -145,6 +145,7 @@ li:hover .label {
     border-radius: 15px;
     font-weight: bold;
     overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
   }
   
   .card::before {
@@ -158,6 +159,11 @@ li:hover .label {
     border-radius: 15px;
     transition: border-color 0.3s ease;
     pointer-events: none;
+    box-sizing: border-box;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
   }
   
   .card:hover::before {
