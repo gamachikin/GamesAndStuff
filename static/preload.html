@@ -167,15 +167,16 @@ function createGameCard(game) {
 window.addEventListener('DOMContentLoaded', function() {
   const gameContainer = document.querySelector('.GameContainer');
   const otherGames = document.querySelector('.OtherGames');
-  
+
   function adjustOtherGamesPosition() {
     const gameContainerRect = gameContainer.getBoundingClientRect();
     const gameContainerBottom = gameContainerRect.bottom + window.scrollY;
+    otherGames.style.position = 'fixed'; // Change position to fixed
     otherGames.style.top = gameContainerBottom + 'px';
   }
-  
+
   adjustOtherGamesPosition();
-  
+
   window.addEventListener('resize', adjustOtherGamesPosition);
 });
 </script>
