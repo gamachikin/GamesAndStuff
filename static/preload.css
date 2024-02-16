@@ -93,7 +93,7 @@ img#GameImage {
   border-radius: 15px;
   width: 100%; /* Adjust the width as needed */
   position: relative; /* Change position to relative */
-  top: 20px; /* Adjust the top position as needed for spacing */
+  top: 200px; /* Adjust the top position as needed for spacing */
   background-color: rgba(255, 255, 255, 0.13);
   overflow-y: auto;
   z-index: 1; /* Ensure the "Other Games" section is above other content */
