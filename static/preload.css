@@ -88,16 +88,32 @@ img#GameImage {
   justify-content: flex-end;
   align-items: flex-start;
 }
+/* Modal Styling */
 .OtherGames {
-    border-radius: 15px;
-    position: fixed; /* Fix the position of the section */
-    top: 50%; /* Position the top at 50% of the window height */
-    left: 50%; /* Position the left at 50% of the window width */
-    transform: translate(-50%, -50%); /* Center the section using transform */
-    z-index: 1; /* Ensure the section remains above other content when scrolling */
-    bottom: 20px; /* Adjust the bottom position as needed */
-    background-color: rgba(255, 255, 255, 0.13);
-    overflow-y: auto;
+  display: none; /* Hide the modal by default */
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  z-index: 1;
+  overflow: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adding a box shadow for effect */
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--accent);
 }
 
 
