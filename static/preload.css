@@ -83,3 +83,9 @@ img#GameImage {
     .card p {
       font-size: 16.5px;
     }
+.OtherGames {
+  max-height: 300px; 
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+}
