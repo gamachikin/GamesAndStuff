@@ -113,26 +113,27 @@
   }
 
   // Function to create game cards
-  function createGameCard(game) {
-    const card = document.createElement('div');
-    card.classList.add('card');
+function createGameCard(game) {
+  const card = document.createElement('div');
+  card.classList.add('card');
 
-    const link = document.createElement('a');
-    link.href = game.link;
-    link.target = '_blank';
+  const link = document.createElement('a');
+  link.href = `/preload.html?game=${encodeURIComponent(game.name)}`; // Update link href
+  link.target = '_blank';
 
-    const img = document.createElement('img');
-    img.src = game.image;
-    link.appendChild(img);
+  const img = document.createElement('img');
+  img.src = game.image;
+  link.appendChild(img);
 
-    const name = document.createElement('p');
-    name.textContent = game.name;
+  const name = document.createElement('p');
+  name.textContent = game.name;
 
-    card.appendChild(link);
-    card.appendChild(name);
+  card.appendChild(link);
+  card.appendChild(name);
 
-    return card;
-  }
+  return card;
+}
+
 
   // Function to fetch game data from games.json
   async function fetchGamesData() {
