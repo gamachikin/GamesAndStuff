@@ -87,15 +87,14 @@ img#GameImage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 1500px;
+  padding-bottom: 1300px;
 }
 
 .OtherGames {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: 20px; /* Adjust margin as needed */
   max-height: 300px;
   overflow-y: auto;
   background: rgba(255, 255, 255, 0.13);
   border-radius: 15px;
 }
+
