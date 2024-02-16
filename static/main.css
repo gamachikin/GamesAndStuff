@@ -153,39 +153,3 @@ a img {
 .card p {
   font-size: 16.5px;
 }
-.game-card {
-      display: inline-block;
-      width: 165px;
-      height: 225px;
-      margin: 10px;
-      padding: 10px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 15px;
-      font-weight: bold;
-    }
-
-    .game-card a img {
-      width: 100%;
-      height: 70%;
-      border-radius: 12px;
-    }
-
-    .game-card p {
-      font-size: 16.5px;
-    }
-
-    /* CSS for other games section */
-    .other-games {
-      margin-top: 30px;
-    }
-
-    .other-games h2 {
-      text-align: center;
-    }
-
-    .other-games #otherGamesContainer {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
