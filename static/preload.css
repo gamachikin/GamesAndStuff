@@ -91,8 +91,7 @@ img#GameImage {
 }
 
 .OtherGames {
-  margin-top: 20px; /* Adjust margin as needed */
-  max-height: 300px;
+  margin: 15px;
   overflow-y: auto;
   background: rgba(255, 255, 255, 0.13);
   border-radius: 15px;
