@@ -163,23 +163,5 @@ function createGameCard(game) {
   // Call the function to display other games
   displayOtherGames();
 </script>
-<script>
-window.addEventListener('DOMContentLoaded', function() {
-  const gameContainer = document.querySelector('.GameContainer');
-  const otherGames = document.querySelector('.OtherGames');
-  
-  function adjustOtherGamesPosition() {
-    const gameContainerRect = gameContainer.getBoundingClientRect();
-    const gameContainerBottom = gameContainerRect.bottom + window.scrollY;
-    otherGames.style.top = gameContainerBottom + 'px';
-  }
-  
-  adjustOtherGamesPosition();
-  
-  window.addEventListener('scroll', adjustOtherGamesPosition); // Update position on scroll
-  window.addEventListener('resize', adjustOtherGamesPosition); // Update position on resize
-});
-
-</script>
 </body>
 </html>
