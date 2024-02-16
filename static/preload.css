@@ -87,7 +87,7 @@ img#GameImage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 320px; /* Adjust the value as needed to accommodate the "Other Games" section */
+  padding-bottom: 600px;
 }
 
 .OtherGames {
@@ -96,6 +96,6 @@ img#GameImage {
   width: 100%;
   max-height: 300px;
   overflow-y: auto;
-  background: rgba(0, 0, 0, 0.17);
+  background: rgba(255, 255, 255, 0.13);
   border-radius: 15px;
 }
