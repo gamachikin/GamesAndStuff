@@ -134,6 +134,7 @@ li:hover .label {
   padding-top: 136px;
 }
 .card {
+    position: relative;
     display: inline-block;
     width: 165px;
     height: 225px;
@@ -143,13 +144,24 @@ li:hover .label {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     font-weight: bold;
-    transition: transform 0.3s ease, background-color 0.3s ease;
     overflow: hidden;
   }
   
-  .card:hover {
-    transform: scale(1.05);
-    background-color: var(--accent);
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: border-color 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .card:hover::before {
+    border-color: var(--accent);
   }
   
   a img {
