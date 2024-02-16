@@ -87,7 +87,8 @@ img#GameImage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 1000px;
+  margin-bottom: -1000px; /* Add negative margin to offset the padding-bottom */
+  padding-bottom: 1000px; /* Maintain the original padding-bottom for spacing */
 }
 
 .OtherGames {
