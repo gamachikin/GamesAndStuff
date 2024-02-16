@@ -6,6 +6,7 @@
   height: 75%; /* Adjust the height as needed */
   position: absolute;
   left: 0;
+  padding-bottom: 20px;
 }
 .GameContainer {
   display: flex;
@@ -41,6 +42,7 @@
   height: 75%; /* Adjust the height as needed */
   position: absolute;
   right: 0;
+  padding-bottom: 20px;
 }
 img#GameImage {
   width: 100%;
@@ -87,8 +89,6 @@ img#GameImage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-bottom: -1000px; /* Add negative margin to offset the padding-bottom */
-  padding-bottom: 1000px; /* Maintain the original padding-bottom for spacing */
 }
 
 .OtherGames {
