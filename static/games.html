@@ -51,10 +51,10 @@
             const name = document.createElement('p');
             name.textContent = game.name;
             
-            card.appendChild(link);
-            card.appendChild(name);
+            card.appendChild(link); // Append link to card
             
-            link.appendChild(image);
+            link.appendChild(image); // Append image to link
+            link.appendChild(name); // Append name to link
             
             gameCardsContainer.appendChild(card);
           });
