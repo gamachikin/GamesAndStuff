@@ -34,6 +34,9 @@
             const card = document.createElement('div');
             card.className = 'card';
             
+            const link = document.createElement('a');
+            link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
+            
             const image = document.createElement('img');
             image.src = game.image;
             image.alt = game.name;
@@ -41,13 +44,10 @@
             const name = document.createElement('p');
             name.textContent = game.name;
             
-            card.appendChild(image);
-            card.appendChild(name);
+            link.appendChild(image); // Append image to link
+            link.appendChild(name); // Append name to link
             
-            // Add a click event listener to the card
-            card.addEventListener('click', function() {
-              window.location.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
-            });
+            card.appendChild(link); // Append link to card
             
             gameCardsContainer.appendChild(card);
           });
