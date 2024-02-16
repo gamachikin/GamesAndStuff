@@ -96,5 +96,72 @@
         window.location.href = '/';
     }
   </script>
+  <!-- Add this HTML at the bottom of your existing code -->
+<div class="OtherGames">
+  <h2>Other Games</h2>
+  <div id="otherGamesContainer"></div>
+</div>
+
+<script>
+  // Function to shuffle array
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  // Function to create game cards
+  function createGameCard(game) {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const link = document.createElement('a');
+    link.href = game.link;
+    link.target = '_blank';
+
+    const img = document.createElement('img');
+    img.src = game.image;
+    link.appendChild(img);
+
+    const name = document.createElement('p');
+    name.textContent = game.name;
+
+    card.appendChild(link);
+    card.appendChild(name);
+
+    return card;
+  }
+
+  // Function to fetch game data from games.json
+  async function fetchGamesData() {
+    try {
+      const response = await fetch('games.json');
+      const gamesData = await response.json();
+      return gamesData;
+    } catch (error) {
+      console.error('Error fetching game data:', error);
+    }
+  }
+
+  // Function to display other games
+  async function displayOtherGames() {
+    const otherGamesContainer = document.getElementById('otherGamesContainer');
+    const gamesData = await fetchGamesData();
+
+    if (gamesData) {
+      const shuffledGames = shuffleArray(gamesData);
+      shuffledGames.slice(0, 6).forEach(game => { // Display up to 6 games
+        const card = createGameCard(game);
+        otherGamesContainer.appendChild(card);
+      });
+    }
+  }
+
+  // Call the function to display other games
+  displayOtherGames();
+</script>
+
 </body>
 </html>
