@@ -10,7 +10,7 @@ body[theme="amoled"] {
     --text-color: #ebebeb;
     --background: #000000;
     --navbar: #0f0f0f;
-    --accent: #7700ff;
+    --accent: #ffffff;
 }
 body[theme="main"] {
     --text-color: #ffffff;
@@ -24,4 +24,40 @@ body[theme="purple"] {
     --navbar: #0f0f0f;
     --accent: #ffffff;
     --scrollbar-track: #000000;
+}
+body[theme="green"] {
+    --text-color: #ffffff;
+    --background: #247339;
+    --navbar: #0f0f0f;
+    --accent: #123d1d;
+}
+body[theme="blue"] {
+    --text-color: #ffffff;
+    --background: #294f99;
+    --navbar: #0f0f0f;
+    --accent: ##0c2861;
+}
+body[theme="red"] {
+    --text-color: #ffffff;
+    --background: #a82e2a;
+    --navbar: #0f0f0f;
+    --accent: #540d0b;
+}
+body[theme="pink"] {
+    --text-color: #ffffff;
+    --background: #bd4fa5;
+    --navbar: #0f0f0f;
+    --accent: #630b50;
+}
+body[theme="orange"] {
+    --text-color: #ffffff;
+    --background: #bf7c30;
+    --navbar: #0f0f0f;
+    --accent: #75440c;
+}
+body[theme="just dont"] {
+    --text-color: #000000;
+    --background: #ffffff;
+    --navbar: #0f0f0f;
+    --accent: #000000;
 }
