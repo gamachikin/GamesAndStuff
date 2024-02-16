@@ -87,7 +87,9 @@ img#GameImage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  min-height: 400px; /* Adjust as needed */
 }
+
 
 .OtherGames {
   margin-bottom: 25px;
