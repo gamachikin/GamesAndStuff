@@ -167,16 +167,15 @@
   const gameContainer = document.querySelector('.GameContainer');
   const otherGames = document.querySelector('.OtherGames');
   
-  function adjustPaddingBottom() {
-    const gameContainerHeight = gameContainer.offsetHeight;
-    otherGames.style.marginBottom = gameContainerHeight + 'px';
+  function adjustOtherGamesPosition() {
+    const gameContainerRect = gameContainer.getBoundingClientRect();
+    otherGames.style.marginTop = gameContainerRect.bottom + 'px';
   }
   
-  adjustPaddingBottom();
+  adjustOtherGamesPosition();
   
-  window.addEventListener('resize', adjustPaddingBottom);
+  window.addEventListener('resize', adjustOtherGamesPosition);
 });
-
 </script>
 </body>
 </html>
