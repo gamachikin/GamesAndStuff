@@ -52,15 +52,6 @@ div.siteinfos {
   border-radius: 15px;
   position: relative;
   top: 150px;
-  background-color: var(--accent);
-  transition: 0.4s border;
-  border-radius: 7px;
-  border: none;
-  color: var(--text-color);
-  font-size: 20px;
-  text-align: center;
-  padding: 5px 15px;
-  margin: 5px auto;
 }
 .settings-input {
   padding: 5px;
@@ -177,7 +168,7 @@ input[type=text] {
     transition: 0.4s border;
     border-radius: 7px;
     border: none;
-    color: var(--text-color);
+    color: #000000;
     font-size: 20px;
     text-align: center;
     padding: 5px 15px;
@@ -188,9 +179,19 @@ input[type=text] {
     transition: 0.4s border;
     border-radius: 7px;
     border: none;
-    color: var(--text-color);
+    color: #000000;
     font-size: 20px;
     text-align: center;
     padding: 5px 15px;
     margin: 5px auto;
 }
+.theme-select {
+  background-color: var(--accent);
+    transition: 0.4s border;
+    border-radius: 7px;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px auto;
