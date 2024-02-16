@@ -101,7 +101,7 @@
   <h2>Other Games</h2>
   <div id="otherGamesContainer"></div>
 </div>
-
+  
 <script>
   // Function to shuffle array
   function shuffleArray(array) {
@@ -162,6 +162,21 @@
   // Call the function to display other games
   displayOtherGames();
 </script>
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+  const gameContainer = document.querySelector('.GameContainer');
+  const otherGames = document.querySelector('.OtherGames');
+  
+  function adjustPaddingBottom() {
+    const gameContainerHeight = gameContainer.offsetHeight;
+    otherGames.style.marginBottom = gameContainerHeight + 'px';
+  }
+  
+  adjustPaddingBottom();
+  
+  window.addEventListener('resize', adjustPaddingBottom);
+});
 
+</script>
 </body>
 </html>
