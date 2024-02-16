@@ -1,7 +1,5 @@
 @import url(themes.css);
 
-@import url(themes.css);
-
 body {
   color: var(--text-color);
   background-color: var(--background);
@@ -54,6 +52,15 @@ div.siteinfos {
   border-radius: 15px;
   position: relative;
   top: 150px;
+  background-color: var(--accent);
+  transition: 0.4s border;
+  border-radius: 7px;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 15px;
+  margin: 5px auto;
 }
 .settings-input {
   padding: 5px;
@@ -170,6 +177,18 @@ input[type=text] {
     transition: 0.4s border;
     border-radius: 7px;
     border: none;
+    color: var(--text-color);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px auto;
+}
+.settings-button {
+    background-color: var(--accent);
+    transition: 0.4s border;
+    border-radius: 7px;
+    border: none;
+    color: var(--text-color);
     font-size: 20px;
     text-align: center;
     padding: 5px 15px;
