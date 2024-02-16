@@ -90,14 +90,12 @@ img#GameImage {
 }
 
 .OtherGames {
-  position: absolute;
-  bottom: 20px; /* Adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  max-height: 300px; /* Adjust as needed */
-  overflow-y: auto;
-  background: rgba(255, 255, 255, 0.13);
   border-radius: 15px;
+  width: 100%; /* Adjust the width as needed */
+  height: 40%; /* Adjust the height as needed */
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.13);
+  overflow-y: auto;
 }
 
 
