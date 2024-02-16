@@ -91,10 +91,13 @@ img#GameImage {
 .OtherGames {
     border-radius: 15px;
     position: fixed; /* Fix the position of the section */
+    top: 50%; /* Position the top at 50% of the window height */
+    left: 50%; /* Position the left at 50% of the window width */
+    transform: translate(-50%, -50%); /* Center the section using transform */
+    z-index: 1; /* Ensure the section remains above other content when scrolling */
     bottom: 20px; /* Adjust the bottom position as needed */
     background-color: rgba(255, 255, 255, 0.13);
     overflow-y: auto;
-    top: 750px;
 }
 
 
