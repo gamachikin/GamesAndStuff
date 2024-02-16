@@ -83,8 +83,15 @@ img#GameImage {
     .card p {
       font-size: 16.5px;
     }
+.GameContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 320px; /* Adjust the value as needed to accommodate the "Other Games" section */
+}
+
 .OtherGames {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   max-height: 300px;
