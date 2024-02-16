@@ -7,55 +7,62 @@
   <title>Games & Stuff</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
+  <style>
+    /* Apply CSS to remove default text decoration */
+    .card a {
+      text-decoration: none;
+      color: inherit; /* Inherit color from parent */
+    }
+  </style>
 </head>
 <body>
   <nav>
-            <p id="time"></p>
-                  
-                        <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 0 0 15px 15px">
-                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
-                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
-                                          <a href="/" class="mainNAVimage-container">
-                                            <img src="G&S nav.png" class="mainNAVimage">
-                                          </a>                                                                                                                 
-                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
-                                          <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/settings">Settings</a></div>
-                        </div>
+    <p id="time"></p>
+    <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 0 0 15px 15px">
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/apps">Apps</a></div>
+      <a href="/" class="mainNAVimage-container">
+        <img src="G&S nav.png" class="mainNAVimage">
+      </a>                                                                                                                 
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/settings">Settings</a></div>
+    </div>
   </nav>
-<div style="padding-top: 125px">
- <div id="game-cards"></div>
+  <div style="padding-top: 125px">
+    <div id="game-cards"></div>
 
-<script>
-  fetch('games.json')
-    .then(response => response.json())
-    .then(data => {
-      const gameCardsContainer = document.getElementById('game-cards');
-      
-      data.forEach(game => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        
-        const link = document.createElement('a');
-        link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
-        
-        const image = document.createElement('img');
-        image.src = game.image;
-        image.alt = game.name;
-        
-        const name = document.createElement('p');
-        name.textContent = game.name;
-        
-        card.appendChild(link);
-        card.appendChild(name);
-        
-        link.appendChild(image);
-        
-        gameCardsContainer.appendChild(card);
-      });
-    })
-    .catch(error => console.error('Error fetching data:', error));
-</script>
-  <script src="/index.js"></script>
-</div>
+    <script>
+      fetch('games.json')
+        .then(response => response.json())
+        .then(data => {
+          const gameCardsContainer = document.getElementById('game-cards');
+          
+          data.forEach(game => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            const link = document.createElement('a');
+            link.href = `/preload.html?game=${encodeURIComponent(game.name)}`;
+            
+            const image = document.createElement('img');
+            image.src = game.image;
+            image.alt = game.name;
+            
+            const name = document.createElement('p');
+            name.textContent = game.name;
+            
+            card.appendChild(link);
+            card.appendChild(name);
+            
+            link.appendChild(image);
+            
+            gameCardsContainer.appendChild(card);
+          });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+    <script src="/index.js"></script>
+  </div>
 </body>
 </html>
