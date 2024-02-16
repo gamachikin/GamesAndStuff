@@ -296,3 +296,8 @@ li:hover .label {
   .card p {
     font-size: 16.5px;
   }
+.card a {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit color from parent */
+      display: block; /* Make anchor tag a block element to cover its parent */
+    }
