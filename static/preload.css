@@ -1,3 +1,5 @@
+@import url(themes.css);
+
 .GameContainer iframe {
   border-radius: 15px;
   width: 60%; /* Adjust the width as needed */
@@ -55,8 +57,8 @@ img#GameImage {
       cursor: pointer;
       font-size: 16px;
       font-weight: bold;
-      color: white;
+      color: var(--text-color);
       padding: 10px;
-      border-radius: 5px;
-      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 7px;
+      background-color: rgba(0, 0, 0, 0.3);
     }
