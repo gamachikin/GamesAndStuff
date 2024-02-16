@@ -87,6 +87,7 @@ img#GameImage {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
+  padding-bottom: 1000px;
 }
 
 .OtherGames {
