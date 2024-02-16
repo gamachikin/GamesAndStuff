@@ -92,11 +92,10 @@ img#GameImage {
   border-radius: 15px;
   width: 100%; /* Adjust the width as needed */
   position: relative; /* Change position to relative */
+  top: 100px; /* Adjust the top position as needed for spacing */
   background-color: rgba(255, 255, 255, 0.13);
   overflow-y: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Example grid layout with 2 columns */
-  grid-gap: 20px; /* Add grid-gap to create spacing between grid items */
+  display: flex;
 }
 
 
