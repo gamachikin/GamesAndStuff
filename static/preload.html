@@ -163,19 +163,24 @@
   displayOtherGames();
 </script>
 <script>
-  window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', function() {
   const gameContainer = document.querySelector('.GameContainer');
   const otherGames = document.querySelector('.OtherGames');
-  
+  let initialMarginTop = parseFloat(window.getComputedStyle(otherGames).marginTop);
+
   function adjustOtherGamesPosition() {
     const gameContainerRect = gameContainer.getBoundingClientRect();
-    otherGames.style.marginTop = gameContainerRect.bottom + 'px';
+    const newMarginTop = gameContainerRect.bottom + 'px';
+    if (otherGames.style.marginTop !== newMarginTop) {
+      otherGames.style.marginTop = newMarginTop;
+    }
   }
   
   adjustOtherGamesPosition();
   
   window.addEventListener('resize', adjustOtherGamesPosition);
 });
+
 </script>
 </body>
 </html>
