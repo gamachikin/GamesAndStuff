@@ -89,12 +89,12 @@ img#GameImage {
   align-items: flex-start;
   padding-bottom: 20px;
 }
-
 .OtherGames {
   border-radius: 15px;
   width: 100%; /* Adjust the width as needed */
   max-height: 40vh; /* Use viewport height for responsiveness */
   position: absolute;
+  bottom: 0; /* Position the section at the bottom of its container */
   background-color: rgba(255, 255, 255, 0.13);
   overflow-y: auto;
   z-index: 1; /* Ensure the "Other Games" section is above other content */
