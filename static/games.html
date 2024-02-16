@@ -7,13 +7,6 @@
   <title>Games & Stuff</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
-  <style>
-    /* Apply CSS to remove default text decoration */
-    .card a {
-      text-decoration: none;
-      color: inherit; /* Inherit color from parent */
-    }
-  </style>
 </head>
 <body>
   <nav>
@@ -51,10 +44,10 @@
             const name = document.createElement('p');
             name.textContent = game.name;
             
-            card.appendChild(link); // Append link to card
-            
             link.appendChild(image); // Append image to link
             link.appendChild(name); // Append name to link
+            
+            card.appendChild(link); // Append link to card
             
             gameCardsContainer.appendChild(card);
           });
