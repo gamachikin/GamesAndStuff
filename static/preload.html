@@ -169,17 +169,14 @@ window.addEventListener('DOMContentLoaded', function() {
   
   function adjustOtherGamesPosition() {
     const gameContainerRect = gameContainer.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    const newMarginTop = Math.max(gameContainerRect.bottom, windowHeight) + 'px';
-    otherGames.style.marginTop = newMarginTop;
+    const gameContainerBottom = gameContainerRect.bottom + window.scrollY;
+    otherGames.style.top = gameContainerBottom + 'px';
   }
   
   adjustOtherGamesPosition();
   
   window.addEventListener('resize', adjustOtherGamesPosition);
 });
-
-
 </script>
 </body>
 </html>
