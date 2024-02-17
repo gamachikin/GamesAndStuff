@@ -1,6 +1,6 @@
 body[theme="red and blue"] {
     --text-color: #ffffff;
-    --background: linear-gradient(#e21f1f, #2233cf);
+    --background: linear-gradient(to right, rgb(226, 31, 31), rgb(34, 51, 207));
     --navbar: #e22e2e;
     --accent: #ffffff;
     --scrollbar-track: #000000;
