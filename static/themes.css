@@ -1,9 +1,9 @@
-body[theme="red and blue"] {
+body[theme="main"] {
     --text-color: #ffffff;
     --background: linear-gradient(to right, rgb(226, 31, 31), rgb(34, 51, 207));
     --navbar: #e22e2e;
     --accent: #ffffff;
-    --scrollbar-track: #000000;
+    --scrollbar-track: #2233CF;
                     
 }
 body[theme="amoled"] {
@@ -12,7 +12,7 @@ body[theme="amoled"] {
     --navbar: #0f0f0f;
     --accent: #ffffff;
 }
-body[theme="main"] {
+body[theme="dark"] {
     --text-color: #ffffff;
     --background: #1a2023;
     --navbar: #0e1213;
@@ -23,7 +23,7 @@ body[theme="purple"] {
     --background: linear-gradient(to right, rgb(128, 0, 128) , rgb(75, 0, 130));
     --navbar: #0f0f0f;
     --accent: #ffffff;
-    --scrollbar-track: #000000;
+    --scrollbar-track: #4B0082;
 }
 body[theme="green"] {
     --text-color: #ffffff;
