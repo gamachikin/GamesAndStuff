@@ -38,87 +38,104 @@
   {
     "name": "Duck Life 1",
     "link": "https://www.hoodamath.com/mobile/games/duck-life/game.html",
-    "image": "/assets/icons/DuckLife1.png"
+    "image": "/assets/icons/DuckLife1.png",
+    "description": "Duck Life 1 is a fun and addictive online game where you train a duck to compete in races and tournaments. In the game, you raise your duckling by training it in various skills such as running, flying, and swimming to prepare it for competitions."
   },
   {
     "name": "Duck Life 2",
     "link": "https://www.hoodamath.com/mobile/games/duck-life-2-world-champion/game.html",
-    "image": "/assets/icons/DuckLife2.png"
+    "image": "/assets/icons/DuckLife2.png",
+    "description": "Duck Life 2 is an online game where players train a duck to compete in races and challenges. In the game, you must feed, train, and improve your duck's skills to make it a champion."
   },
   {
     "name": "Duck Life 3",
     "link": "https://www.hoodamath.com/mobile/games/duck-life-3-evolution/game.html",
-    "image": "/assets/icons/DuckLife3.png"
+    "image": "/assets/icons/DuckLife3.png",
+    "description": "Duck Life 3 is a browser-based game where you play as a duck and compete in various sports and activities. The game features a variety of sports, including running, swimming, flying, and more."
   },
   {
     "name": "Duck Life 4",
     "link": "https://www.hoodamath.com/mobile/games/duck-life-4/game.html",
-    "image": "/assets/icons/DuckLife4.png"
+    "image": "/assets/icons/DuckLife4.png",
+    "description": "In Duck Life 4, you start by creating your custom duck and then embark on a journey to become the ultimate Ducklympics champion. The game features various training mini-games that allow you to improve your duck's skills in different disciplines, such as running, swimming, flying, and more."
   },
   {
     "name": "Duck Life 5",
     "link": "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc%2Fduck-life-5.xml",
-    "image": "/assets/icons/DuckLife5.png"
+    "image": "/assets/icons/DuckLife5.png",
+    "description": "Duck Life 5 is a browser-based game where you train and compete with a team of ducks in various sports. It's the fifth installment in the Duck Life series, developed by Wix Games."
   },
   {
     "name": "Duck Life 6",
     "link": "https://www.hoodamath.com/mobile/games/duck-life-6-space/game.html",
-    "image": "/assets/icons/DuckLife6.png"
+    "image": "/assets/icons/DuckLife6.png",
+    "description": "Duck Life 6 is a browser-based game where you play as a duck and compete in various sports and activities. It's the sixth installment in the popular Duck Life series, known for its fun and engaging gameplay."
   },
   {
     "name": "Super Mario Bros",
     "link": "https://supermario.ee/mario.html",
-    "image": "/assets/icons/SuperMarioBros.png"
+    "image": "/assets/icons/SuperMarioBros.png",
+    "description": "Super Mario Bros. follows the adventures of Mario and his brother Luigi as they travel through the Mushroom Kingdom to rescue Princess Peach from Bowser."
   },
   {
     "name": "Super Mario Bros 2",
     "link": "https://kiz10.com/upload/games/htmlgames/super-mario-bros-2/index.html",
-    "image": "/assets/icons/SuperMarioBros2.jpg"
+    "image": "/assets/icons/SuperMarioBros2.jpg",
+    "description": "Super Mario Bros. 2 is the sequel to Super Mario Bros. and features Mario and Luigi as they travel through the Mushroom Kingdom to rescue Princess Peach from Bowser."
   },
   {
     "name": "Super Mario Bros 3",
     "link": "https://4gameground.com/nnes/?nsyst2=nes&nsyst=nes&fl=4_Super_Mario_Bro&rom=nes",
-    "image": "/assets/icons/SuperMarioBros3.png"
+    "image": "/assets/icons/SuperMarioBros3.png",
+    "description": "In Super Mario Bros. 3, players control Mario or Luigi as they travel through the Mushroom Kingdom to rescue Princess Peach from Bowser. The game features a variety of levels, including underwater stages, flying levels, and castle stages."
   },
   {
     "name": "Super Mario 64",
     "link": "https://downloads.retrostic.com/play.php?console_slug=n64&rom_url=https://downloads.retrostic.com/roms/Super%20Mario%2064%20%28U%29%20%5B%21%5D.zip",
-    "image": "/assets/icons/SuperMario64.png"
+    "image": "/assets/icons/SuperMario64.png",
+    "description": "In Super Mario 64, players control Mario as he explores Princess Peach's castle and the surrounding areas. The game features a large, open-world environment that players can explore freely."
   },
   {
     "name": "Escaping The Prison",
     "link": "https://f.silvergames.com/ruffle/player.php?id=1302",
-    "image": "/assets/icons/HenryStickminETP.png"
+    "image": "/assets/icons/HenryStickminETP.png",
+    "description": "Escaping the Prison is a text-based adventure game where you play as a prisoner trying to escape from a high-security prison."
   },
   {
     "name": "Stealing The Diamond",
     "link": "https://f.silvergames.com/ruffle/player.php?id=1301",
-    "image": "/assets/icons/HenryStickminSTD.png"
+    "image": "/assets/icons/HenryStickminSTD.png",
+    "description": "The stealing the diamond game is a classic puzzle game where the objective is to steal a diamond from a heavily guarded museum. The game typically involves a series of challenges and obstacles that the player must overcome in order to reach the diamond and escape undetected."
   },
   {
     "name": "Infiltrating The Airship",
     "link": "https://f.silvergames.com/ruffle/player.php?id=3011",
-    "image": "/assets/icons/HenryStickminITA.png"
+    "image": "/assets/icons/HenryStickminITA.png",
+    "description": "Infiltrating the Airship is a text-based adventure game where players take on the role of a spy tasked with infiltrating an airship and retrieving valuable information."
   },
   {
     "name": "Fleeing The Complex",
     "link": "https://f.silvergames.com/ruffle/player.php?id=5195",
-    "image": "/assets/icons/HenryStickminFTC.png"
+    "image": "/assets/icons/HenryStickminFTC.png",
+    "description": "Fleeing the Complex is a popular online game developed by PuffballsUnited. It is the fifth installment in the Henry Stickmin series. The game follows the story of Henry Stickmin, a stick figure who is trying to escape from a high-security complex."
   },
   {
     "name": "Run 3",
     "link": "https://unblocked1889.github.io/R033/tn6pS9dCf37xAhkJv/",
-    "image": "/assets/icons/Run3.png"
+    "image": "/assets/icons/Run3.png",
+    "description": "Run 3 is a popular endless running game where players control a character running through a tunnel in space. The game features various levels with increasing difficulty, requiring players to navigate through obstacles and gaps by jumping, floating, and avoiding falling off the edges."
   },
   {
     "name": "OvO",
     "link": "https://75jfh73gd9hla64g-opensocial.googleusercontent.com/gadgets/ifr?url=https://googleusercontent.b-cdn.net/ovo/ovo.xml",
-    "image": "/assets/icons/OvO.png"
+    "image": "/assets/icons/OvO.png",
+    "description": "OvO is a fast paced skill based platforming game focused on maneuvering around the levels as fast as possible."
   },
   {
     "name": "Wrestle Bros",
     "link": "https://wrestlebros.io/",
-    "image": "/assets/icons/WrestleBros.png"
+    "image": "/assets/icons/WrestleBros.png",
+    "description": "Wrestle Bros is a browser-based professional wrestling game made by Blue Wizard. The players get to control colorful characters in intense wrestling battles."
   },
   {
     "name": "Basket Bros",
