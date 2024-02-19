@@ -140,17 +140,20 @@
   {
     "name": "Basket Bros",
     "link": "https://basketbros.io",
-    "image": "/assets/icons/BasketBros.png"
+    "image": "/assets/icons/BasketBros.png",
+    "description": "Basket Bros is an online multiplayer basketball game where players compete against each other in fast-paced matches. The game features simple controls and vibrant graphics, making it easy to pick up and play."
   },
   {
     "name": "Monkey Mart",
     "link": "https://slope-game.github.io/newgame/monkey-mart/",
-    "image": "/assets/icons/MonkeyMart.png"
+    "image": "/assets/icons/MonkeyMart.png",
+    "description": "Monkey Mart is a fun and addictive online game where players manage a monkey-run convenience store. The goal is to serve customers quickly and efficiently while expanding and upgrading the store to increase profits."
   },
   {
     "name": "Subway Surfers",
     "link": "https://kazwire.com/game/static/subway-surfers/index.html",
-    "image": "/assets/icons/SubwaySurfers.png"
+    "image": "/assets/icons/SubwaySurfers.png",
+    "description": "Subway Surfers is an endless runner mobile game. The aim of the game is to outrun a train inspector while dodging oncoming trains, barriers and other objects."
   },
   {
     "name": "Slope",
@@ -161,137 +164,164 @@
   {
     "name": "Bitlife",
     "link": "https://bitlifeonline.github.io/class/index.html",
-    "image": "/assets/icons/Bitlife.png"
+    "image": "/assets/icons/Bitlife.png",
+    "description": "BitLife is a single player life simulation game in which users make decisions based on a series of multiple choice questions presented to them as they get older (within the game)."
   },
-  {
+  { 
     "name": "Friday Night Funkin'",
     "link": "https://static.playunblocked.com/2021/04/friday-night-funkin/",
-    "image": "/assets/icons/FNF.png"
+    "image": "/assets/icons/FNF.png",
+    "description": "Friday Night Funkin' is a rhythm game where you play as a character trying to impress your girlfriend's family with your rap skills. The game features catchy music, challenging levels, and colorful graphics."
   },
   {
     "name": "JustFall.lol",
     "link": "https://justfall.lol/",
-    "image": "/assets/icons/JustFallLOL.png"
+    "image": "/assets/icons/JustFallLOL.png",
+    "description": "JustFall.lol is a multiplayer physics-based game where players compete to be the last one standing on a platform that gradually falls away. The game offers fast-paced gameplay and various power-ups to keep the action exciting."
   },
   {
     "name": "1v1.lol",
     "link": "https://1v1.lol/",
-    "image": "/assets/icons/1v1LOL.png"
+    "image": "/assets/icons/1v1LOL.png",
+    "description": "1v1.lol is a fast-paced multiplayer shooting game where players face off in intense one-on-one battles. The game offers a variety of weapons and building mechanics, allowing for strategic gameplay and skillful combat."
   },
   {
     "name": "Backrooms",
     "link": "https://kdata1.com/2022/05/backroom16/",
-    "image": "/assets/icons/Backrooms.png"
+    "image": "/assets/icons/Backrooms.png",
+    "description": "Backrooms is a horror exploration game inspired by the internet urban legend. Players navigate through procedurally generated levels of empty, maze-like rooms while avoiding mysterious entities that lurk in the darkness."
   },
   {
     "name": "Cookie Clicker",
     "link": "https://webglmath.github.io/cookie-clicker/",
-    "image": "/assets/icons/CookieClicker.png"
+    "image": "/assets/icons/CookieClicker.png",
+    "description": "Cookie Clicker is an incremental game where players aim to produce as many cookies as possible by clicking on a large cookie icon. As players accumulate cookies, they can spend them to purchase upgrades and unlock new features."
   },
   {
     "name": "Tiny Fishing",
     "link": "https://www.dob5.com/d/file/games/tiny-fishing/",
-    "image": "/assets/icons/TinyFishing.png"
+    "image": "/assets/icons/TinyFishing.png",
+    "description": "Tiny Fishing is a charming fishing game where players cast their lines and try to catch various fish species. The game features simple controls and relaxing gameplay, making it perfect for casual gaming sessions."
   },
   {
     "name": "Minecraft",
     "link": "https://sd592g.github.io/zj684od4lfg/",
-    "image": "/assets/icons/Minecraft.png"
+    "image": "/assets/icons/Minecraft.png",
+    "description": "Minecraft is a sandbox game where players can build and explore virtual worlds made up of blocks. The game offers endless possibilities for creativity and adventure, allowing players to mine resources, craft items, and survive in diverse environments."
   },
   {
     "name": "Baldi's Basics",
     "link": "https://igroutka.ru/loader/game/26471/",
-    "image": "/assets/icons/BaldisBasics.png"
+    "image": "/assets/icons/BaldisBasics.png",
+    "description": "Baldi's Basics is a surreal and humorous horror game set in a spooky school. Players must solve math problems and collect items while avoiding the sinister Baldi, who gets increasingly aggressive as the game progresses."
   },
   {
     "name": "Dino Game",
     "link": "https://offline-dino-game.firebaseapp.com/",
-    "image": "/assets/icons/DinoGame.png"
+    "image": "/assets/icons/DinoGame.png",
+    "description": "Dino Game, also known as Chrome Dinosaur Game, is an endless runner game that appears in Google Chrome browser when there's no internet connection. Players control a dinosaur and must jump over obstacles to avoid extinction."
   },
   {
     "name": "Flappy Bird",
     "link": "https://flappy-bird.io/flappy-bird.embed",
-    "image": "/assets/icons/FlappyBird.png"
+    "image": "/assets/icons/FlappyBird.png",
+    "description": "Flappy Bird is a simple yet addictive side-scrolling game where players control a bird and navigate it through a series of pipes. The game's minimalistic graphics and challenging gameplay have made it a classic in the world of mobile gaming."
   },
   {
     "name": "Crossy Road",
     "link": "https://kazwire.com/game/static/crossy-road/index.html",
-    "image": "/assets/icons/CrossyRoad.png"
+    "image": "/assets/icons/CrossyRoad.png",
+    "description": "Crossy Road is a casual arcade game where players guide a character through traffic, rivers, and other obstacles. The game's voxel art style and quirky characters add to its charm, providing endless entertainment for players of all ages."
   },
   {
     "name": "Drive Mad",
     "link": "https://g.vseigru.net/10/igra-dzhipy-bezumnoe-vozhdenie/",
-    "image": "/assets/icons/DriveMad.png"
+    "image": "/assets/icons/DriveMad.png",
+    "description": "Drive Mad is an adrenaline-fueled racing game where players compete in intense off-road races. The game features realistic physics and dynamic environments, offering a thrilling experience for racing enthusiasts."
   },
   {
     "name": "Powerline.io",
     "link": "https://powerline.io/",
-    "image": "/assets/icons/Powerlineio.png"
+    "image": "/assets/icons/Powerlineio.png",
+    "description": "Powerline.io is a multiplayer snake game where players compete to become the longest snake on the playing field. The game offers fast-paced action and strategic gameplay as players navigate the arena and consume pellets to grow their snakes."
   },
   {
     "name": "Paper.io",
     "link": "https://paper-io.com/",
-    "image": "/assets/icons/Paperio.png"
+    "image": "/assets/icons/Paperio.png",
+    "description": "Paper.io is a multiplayer territory-capturing game where players compete to claim the largest area on the map. The game combines strategy and quick reflexes as players navigate the playing field and try to outsmart their opponents."
   },
   {
     "name": "Krunker.io",
     "link": "https://krunker.io/",
-    "image": "/assets/icons/Krunkerio.png"
+    "image": "/assets/icons/Krunkerio.png",
+    "description": "Krunker.io is a fast-paced first-person shooter game set in a blocky, pixelated world. Players can choose from a variety of weapons and game modes as they battle against other players in action-packed matches."
   },
   {
     "name": "Hole.io",
     "link": "https://hole-io.com/",
-    "image": "/assets/icons/Holeio.png"
+    "image": "/assets/icons/Holeio.png",
+    "description": "Hole.io is a multiplayer arcade game where players control a black hole and compete to swallow objects and other players to grow larger. The game offers chaotic fun as players navigate the city and devour everything in their path."
   },
   {
     "name": "Shell Shockers",
     "link": "https://shellshock.io/",
-    "image": "/assets/icons/ShellShockers.png"
+    "image": "/assets/icons/ShellShockers.png",
+    "description": "Shell Shockers is a multiplayer first-person shooter game where players control eggs armed with weapons and battle against each other in fast-paced matches. The game features egg-themed characters and environments, adding a humorous twist to the genre."
   },
   {
     "name": "Sonic The Hedgehog",
     "link": "https://megadrive-emulator.com/game/?game=Sonic_the_Hedgehog.bin",
-    "image": "/assets/icons/SonicTheHedgehog.png"
+    "image": "/assets/icons/SonicTheHedgehog.png",
+    "description": "Sonic The Hedgehog is a classic platformer game where players control Sonic as he speeds through levels, collects rings, and defeats enemies. The game's fast-paced gameplay and iconic characters have made it a beloved favorite among gamers."
   },
   {
     "name": "Sonic The Hedgehog 2",
     "link": "https://megadrive-emulator.com/game/?game=Sonic_the_Hedgehog_2_JUE.bin",
-    "image": "/assets/icons/SonicTheHedgehog2.png"
+    "image": "/assets/icons/SonicTheHedgehog2.png",
+    "description": "Sonic The Hedgehog 2 is the sequel to the original Sonic game, featuring Sonic and his sidekick Tails as they battle against the evil Dr. Robotnik. The game introduces new levels, power-ups, and gameplay mechanics, expanding on the success of the first game."
   },
   {
     "name": "Tunnel Rush",
     "link": "https://webglmath.github.io/tunnel-rush/",
-    "image": "/assets/icons/TunnelRush.png"
+    "image": "/assets/icons/TunnelRush.png",
+    "description": "Tunnel Rush is a fast-paced reflex game where players navigate through a neon-colored tunnel filled with obstacles. The game's sleek visuals and pulse-pounding soundtrack create an immersive experience as players strive to survive for as long as possible."
   },
   {
     "name": "Clicker Heroes",
     "link": "https://www.gameslol.net/data/clicker-heroes/index.html",
-    "image": "/assets/icons/ClickerHeroes.png"
+    "image": "/assets/icons/ClickerHeroes.png",
+    "description": "Clicker Heroes is an idle RPG game where players defeat monsters by clicking or tapping on them. The game features a wide variety of heroes, upgrades, and abilities to unlock as players progress through endless levels of monster-slaying action."
   },
   {
     "name": "Retro Bowl",
     "link": "https://retrobowlmod.com/retro-bowl.embed",
-    "image": "/assets/icons/RetroBowl.png"
+    "image": "/assets/icons/RetroBowl.png",
+    "description": "Retro Bowl is a retro-style American football game where players manage their own team and compete in thrilling matches. The game features simple controls, pixel art graphics, and addictive gameplay that captures the essence of classic football games."
   },
   {
     "name": "Sigmally (Agar.Io)",
     "link": "https://sigmally.com",
-    "image": "/assets/icons/AgarIo.png"
+    "image": "/assets/icons/AgarIo.png",
+    "description": "Sigmally, formerly known as Agar.io, is a multiplayer action game where players control cells and compete to become the largest on the playing field. The game offers simple mechanics and addictive gameplay, making it a popular choice for casual gaming sessions."
   },
   {
     "name": "Osw!",
     "link": "https://joshua-usi.github.io/osw",
-    "image": "/assets/icons/osw.png"
+    "image": "/assets/icons/osw.png",
+    "description": "Osw! is a fast-paced arcade game where players control a colorful character and navigate through obstacles. The game features vibrant visuals, responsive controls, and challenging levels that test players' reflexes and agility."
   },
   {
     "name": "ADOFAI",
     "link": "https://kazwire.com/game/static/a-dance-of-fire-and-ice/index.html",
-    "image": "/assets/icons/ADOFAI.png"
+    "image": "/assets/icons/ADOFAI.png",
+    "description": "ADOFAI, short for A Dance of Fire and Ice, is a rhythm-based game where players must keep a steady beat to progress through levels. The game features minimalist graphics and captivating music, offering a unique and immersive gaming experience."
   },
   {
     "name": "Nut Simulator",
     "link": "https://nutsimulator.github.io/index.html",
-    "image": "/assets/icons/NutSimulator.png"
+    "image": "/assets/icons/NutSimulator.png",
+    "description": "Nut Simulator is a quirky simulation game where players control a squirrel and gather nuts to survive. The game offers charming visuals, humorous gameplay, and a relaxing atmosphere, making it a delightful choice for casual gaming."
   },
   {
     "name": "Riddle School",
