@@ -21,7 +21,7 @@
     "name": "FNAF 2",
     "link": "https://run3.io/popgame/fnaf/fnaf2.html",
     "image": "/assets/icons/FNAF2.png",
-    "discription": "Five Nights at Freddy's 2 is a point-and-click survival horror video game. You must survive five nights without being caught by the animatronic characters that roam the building."
+    "description": "Five Nights at Freddy's 2 is a point-and-click survival horror video game. You must survive five nights without being caught by the animatronic characters that roam the building."
   },
   {
     "name": "FNAF 3",
@@ -309,7 +309,7 @@
     "name": "Osw!",
     "link": "https://joshua-usi.github.io/osw",
     "image": "/assets/icons/osw.png",
-    "description": "Osw! is a fast-paced arcade game where players control a colorful character and navigate through obstacles. The game features vibrant visuals, responsive controls, and challenging levels that test players' reflexes and agility."
+    "description": "Osw!, similar to Osu!, rings the addictive rhythm gameplay of Osu! to your web browser. Tap, slide, and spin along to the beat of your favorite songs as they play in the background."
   },
   {
     "name": "ADOFAI",
@@ -321,7 +321,7 @@
     "name": "Nut Simulator",
     "link": "https://nutsimulator.github.io/index.html",
     "image": "/assets/icons/NutSimulator.png",
-    "description": "Nut Simulator is a quirky simulation game where players control a squirrel and gather nuts to survive. The game offers charming visuals, humorous gameplay, and a relaxing atmosphere, making it a delightful choice for casual gaming."
+    "description": "Nut Simulator is a quirky clicker game where players earn nuts by clicking nuts and upgrade to get even more nuts. The game offers charming visuals, humorous gameplay, and a relaxing atmosphere, making it a delightful choice for casual gaming."
   },
   {
     "name": "Riddle School",
