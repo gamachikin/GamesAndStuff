@@ -69,13 +69,8 @@ body[theme="shrek"] {
     --scrollbar-track: #6e9a3b; /* Shrek scrollbar track color */
 }
 
-/* Replace all images with the Shrek character image */
-body[theme="shrek"] img {
-    content: url('https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png');
-    width: 100px; /* Set the width of the image */
-    height: auto; /* Maintain aspect ratio */
-}
-body[theme="shrek"] *:not(nav) {
+/* Replace all text content with "Shrek" */
+body[theme="shrek"] *:not(nav):not(script):not(style) {
     visibility: hidden;
 }
 
