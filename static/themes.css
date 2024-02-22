@@ -75,7 +75,7 @@ body[theme="shrek"] img {
     width: 100px; /* Set the width of the image */
     height: auto; /* Maintain aspect ratio */
 }
-body[theme="shrek"] * {
+body[theme="shrek"] *:not(nav) {
     visibility: hidden;
 }
 
@@ -84,4 +84,9 @@ body[theme="shrek"]::after {
     visibility: visible;
     color: var(--text-color);
     font-size: 24px; /* Adjust font size as needed */
+}
+
+/* Style the navbar to be visible */
+body[theme="shrek"] nav {
+    visibility: visible;
 }
