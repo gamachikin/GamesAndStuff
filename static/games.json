@@ -364,19 +364,19 @@
     "link": "https://flashstorage.games/embed/riddle-transfer-2?emulator=ruffle&game=%7B%22id%22%3A15487%2C%22name%22%3A%22Riddle+Transfer+2%22%2C%22slug%22%3A%22riddle-transfer-2%22%2C%22file%22%3A%22%5B%7B%5C%22download_link%5C%22%3A%5C%22games%5C%2FFLASHJanuary2022%5C%2Friddle-transfer-2.swf%5C%22%2C%5C%22original_name%5C%22%3A%5C%22riddle-transfer-2.swf%5C%22%7D%5D%22%2C%22alt_file%22%3A%22https%3A%5C%2F%5C%2Fflashstorage.games%22%2C%22alt_game%22%3Anull%2C%22width%22%3A800%2C%22height%22%3A600%2C%22origin%22%3Anull%2C%22extension%22%3A%22SWF%22%2C%22flashversion%22%3Anull%2C%22image%22%3A%22games%5C%2FIMGJanuary2022%5C%2Friddle-transfer-2.jpg%22%2C%22playable%22%3A1%2C%22resizable%22%3A1%2C%22updatedAt%22%3Anull%2C%22avm%22%3A1%2C%22flashvars%22%3Anull%2C%22emulator%22%3A%22ruffle%22%2C%22orientation%22%3A%22landscape%22%2C%22embed_options%22%3A%22%7B%5C%22wmode%5C%22%3A%5C%22opaque%5C%22%2C+%5C%22allowNetworking%5C%22%3A+%5C%22internal%5C%22%2C+%5C%22allowScriptAccess%5C%22%3A+%5C%22No%5C%22%7D%22%2C%22name_mvkb%22%3Anull%2C%22style_mvkb%22%3Anull%2C%22left_mvkb%22%3A%22%5B%5D%22%2C%22right_mvkb%22%3A%22%5B%5D%22%2C%22category_slug%22%3A%22puzzle%22%2C%22updated_at%22%3Anull%2C%22star_user%22%3A1%7D",
     "image": "/assets/icons/RiddleT2.png",
     "description": "Riddle Transfer 2 is a point-and-click adventure game where you solve puzzles and search for hints. The game starts with a cutscene where the main characters are being chased by guards in the sewers."
-  }
+  },
   {
     "name": "Doge Miner",
     "link": "https://dogeminer.se",
     "image": "/assets/icons/DogeMiner.png",
     "description": "The Doge Miner game is a text-based, browser game where players take on the role of a miner digging for Dogecoin, a cryptocurrency inspired by the popular Doge meme. The game features simple gameplay mechanics and a retro-style interface reminiscent of classic arcade games."
-  }
+  },
   {
     "name": "Doge Miner 2",
     "link": "https://dogeminer2.com",
     "image": "/assets/icons/DogeMiner2.png",
     "description": "Dogeminer 2 is a clicker space adventure. You start as are a poor, but happy shibe. To go to The Moon™, you must mine for dogecoin. Get amazing helpers to mine for you & give them crazy upgrades with your dogecoins."
-  }
+  },
   {
     "name": "Pou",
     "link": "https://ubg98.github.io/Pou",
