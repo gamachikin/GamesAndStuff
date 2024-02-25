@@ -365,4 +365,22 @@
     "image": "/assets/icons/RiddleT2.png",
     "description": "Riddle Transfer 2 is a point-and-click adventure game where you solve puzzles and search for hints. The game starts with a cutscene where the main characters are being chased by guards in the sewers."
   }
+  {
+    "name": "Doge Miner",
+    "link": "https://dogeminer.se",
+    "image": "/assets/icons/DogeMiner.png",
+    "description": "The Doge Miner game is a text-based, browser game where players take on the role of a miner digging for Dogecoin, a cryptocurrency inspired by the popular Doge meme. The game features simple gameplay mechanics and a retro-style interface reminiscent of classic arcade games."
+  }
+  {
+    "name": "Doge Miner 2",
+    "link": "https://dogeminer2.com",
+    "image": "/assets/icons/DogeMiner2.png",
+    "description": "Dogeminer 2 is a clicker space adventure. You start as are a poor, but happy shibe. To go to The Moon™, you must mine for dogecoin. Get amazing helpers to mine for you & give them crazy upgrades with your dogecoins."
+  }
+  {
+    "name": "Pou",
+    "link": "https://ubg98.github.io/Pou",
+    "image": "/assets/icons/Pou.png",
+    "description": "Pou is a virtual pet game created by Paul Salameh and launched in 2012. The objective of the game is to take care of a small, blob-like creature named Pou by feeding, cleaning, and playing with it. Players can customize their Pou's appearance with a variety of accessories and clothing items."
+  }
 ]
