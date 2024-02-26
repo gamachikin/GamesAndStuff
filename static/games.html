@@ -60,13 +60,15 @@ const searchInput = document.getElementById('searchInput');
 const gameCardsContainer = document.getElementById('game-cards');
 const allCards = document.querySelectorAll('.card');
 
+// Create an array to store all game titles for filtering
+const gameTitles = Array.from(allCards).map(card => card.innerText.trim().toLowerCase());
+
 // Add an input event listener to the search input
 searchInput.addEventListener('input', function() {
     const searchTerm = searchInput.value.trim().toLowerCase();
 
-    // Loop through each game card and hide/show based on the search term
-    allCards.forEach(card => {
-        const gameTitle = card.innerText.toLowerCase();
+    allCards.forEach((card, index) => {
+        const gameTitle = gameTitles[index];
         if (gameTitle.includes(searchTerm)) {
             card.style.display = 'inline-block'; // Show the card
         } else {
@@ -82,11 +84,6 @@ function clearSearch() {
         card.style.display = 'inline-block'; // Show all cards
     });
 }
-
-// Add a button or link to trigger the clearSearch function
-// Example:
-// <button onclick="clearSearch()">Clear Search</button>
-
 </script>
 
     <script src="/index.js"></script>
