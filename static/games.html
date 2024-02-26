@@ -61,7 +61,7 @@ const gameCardsContainer = document.getElementById('game-cards');
 const allCards = document.querySelectorAll('.card');
 
 // Create an array to store all game titles for filtering
-const gameTitles = Array.from(allCards).map(card => card.innerText.trim().toLowerCase());
+const gameTitles = Array.from(allCards).map(card => card.querySelector('p').innerText.trim().toLowerCase());
 
 // Add an input event listener to the search input
 searchInput.addEventListener('input', function() {
