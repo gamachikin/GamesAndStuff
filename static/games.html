@@ -55,24 +55,38 @@
         })
         .catch(error => console.error('Error fetching data:', error));
 
-      // Get the input element and game cards container
+// Get the input element and game cards container
 const searchInput = document.getElementById('searchInput');
 const gameCardsContainer = document.getElementById('game-cards');
+const allCards = document.querySelectorAll('.card');
 
 // Add an input event listener to the search input
 searchInput.addEventListener('input', function() {
-    const searchTerm = searchInput.value.toLowerCase();
+    const searchTerm = searchInput.value.trim().toLowerCase();
 
     // Loop through each game card and hide/show based on the search term
-    document.querySelectorAll('.card').forEach(card => {
+    allCards.forEach(card => {
         const gameTitle = card.innerText.toLowerCase();
         if (gameTitle.includes(searchTerm)) {
-            card.style.display = 'block';  // Show the card
+            card.style.display = 'inline-block'; // Show the card
         } else {
-            card.style.display = 'none';   // Hide the card
+            card.style.display = 'none'; // Hide the card
         }
     });
 });
+
+// Function to clear the search query and show all games
+function clearSearch() {
+    searchInput.value = '';
+    allCards.forEach(card => {
+        card.style.display = 'inline-block'; // Show all cards
+    });
+}
+
+// Add a button or link to trigger the clearSearch function
+// Example:
+// <button onclick="clearSearch()">Clear Search</button>
+
 </script>
 
     <script src="/index.js"></script>
