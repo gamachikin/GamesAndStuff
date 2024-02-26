@@ -22,9 +22,10 @@
     </div>
   </nav>
   <div style="padding-top: 125px">
-    <div id="game-cards"></div>
+  <input class="GameSearch" type="text" id="searchInput" placeholder="Search for a game...">
+  <div id="game-cards"></div>
 
-    <script>
+<script>
       fetch('games.json')
         .then(response => response.json())
         .then(data => {
@@ -53,7 +54,26 @@
           });
         })
         .catch(error => console.error('Error fetching data:', error));
-    </script>
+
+      // Get the input element and game cards container
+const searchInput = document.getElementById('searchInput');
+const gameCardsContainer = document.getElementById('game-cards');
+
+// Add an input event listener to the search input
+searchInput.addEventListener('input', function() {
+    const searchTerm = searchInput.value.toLowerCase();
+
+    // Loop through each game card and hide/show based on the search term
+    document.querySelectorAll('.card').forEach(card => {
+        const gameTitle = card.innerText.toLowerCase();
+        if (gameTitle.includes(searchTerm)) {
+            card.style.display = 'block';  // Show the card
+        } else {
+            card.style.display = 'none';   // Hide the card
+        }
+    });
+});
+</script>
 
     <script src="/index.js"></script>
   </div>
