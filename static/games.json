@@ -382,5 +382,11 @@
     "link": "https://ubg98.github.io/Pou",
     "image": "/assets/icons/Pou.png",
     "description": "Pou is a virtual pet game created by Paul Salameh and launched in 2012. The objective of the game is to take care of a small, blob-like creature named Pou by feeding, cleaning, and playing with it. Players can customize their Pou's appearance with a variety of accessories and clothing items."
+  },
+  {
+    "name": "Ant Art Tycoon",
+    "link": "https://antarttycoon.github.io/game/index.html",
+    "image": "/assets/icons/AntArtTycoon.png",
+    "description": "Ant Art Tycoon is a simulation game where players take on the role of an ant colony manager. The game involves building and managing an ant colony, including constructing tunnels, gathering resources, and defending against predators."
   }
 ]
