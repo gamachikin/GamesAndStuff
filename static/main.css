@@ -184,3 +184,15 @@ li:hover .label {
     text-align: center;
     padding: 5px 15px;
     margin: 5px auto;
+}
+input[type=text] {
+    background-color: var(--accent);
+    transition: 0.4s border;
+    border-radius: 7px;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px auto;
+}
