@@ -66,4 +66,5 @@ body[theme="ape"] {
     --background: url("https://cdn.discordapp.com/attachments/1191829882859180135/1212226452553203833/Screenshot_20240222_163209.jpg?ex=65f110dc&is=65de9bdc&hm=c55c1cd488a2c7d4ee665ceb820600704d3f6da04d88b7aabcea97c1831f3f56&");
     --navbar: #0f0f0f;
     --accent: #D2B48C;
+    background-size: cover;
 }
