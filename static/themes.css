@@ -68,4 +68,12 @@ body[theme="ape"] {
     --accent: #D2B48C;
     background-size: 100% 100%;
 }
+body[theme="slope"] {
+    --text-color: #FFFFFF;
+    --background: url("https://garden.spoonflower.com/c/10840511/p/f/m/fUOkDCJT-YoQcuFmhqZDUBzsAnn1ZrxnXZ5WzA2xurWai2_meg6A0w0/Green_Grid_on_Black.jpg");
+    --navbar: #0f0f0f;
+    --accent: #FFFFFF;
+    --scrollbar-track: #000000;
+    background-size: 100% 100%;
+}
 
