@@ -14,7 +14,7 @@
   {
     "name": "Game Emulator",
     "link": "https://demo.emulatorjs.org",
-    "image": "/assets/icons/Emulator.png",
+    "image": "/assets/icons/logo.png",
     "description": "EmulatorJS is a backend service that hosts its selection of emulators that may be embedded into your website."
   }
 ]
