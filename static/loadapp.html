@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Games & Stuff Logo (1).png" type="image/png">
+  <title>Games & Stuff</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="preload.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:wght@700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <nav>
+    <p id="time"></p>
+    <div class="navitems" style="background-color: rgba(0, 0, 0, 0.17); border-radius: 15px">
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/games">Games</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a href="/canvas">Canvas</a></div>
+      <a href="/" class="mainNAVimage-container">
+        <img src="G&S nav.png" class="mainNAVimage">
+      </a>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
+      <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings">Settings</a></div>
+    </div>
+  </nav>
+  <div style="padding-top: 115px">
+    <div class="GameContainer">
+      <div class="FrameContainer">
+        <iframe allowfullscreen="true" frameborder="0" id="frame"></iframe>
+      </div>
+     <div id="GameInfo" class="GameInfo">
+       <div class="GameTitle" id="GameTitle"></div>
+         <div class="GameImageContainer">
+           <img id="GameImage" alt="game image">
+          </div>
+        <div class="GameDescription" id="GameDescription"></div>
+        <div class="GameButtons">
+          <button onclick="toggleFullScreen()">Fullscreen</button>
+          <button onclick="reloadPage()">Reload</button>
+          <button onclick="goHome()">Home</button>
+        </div>
+    </div>
+    </div>
+   </div>
+  
+  </div>
+  <script src="/index.js"></script>
+  <script>
+    // Function to fetch game data from the JSON file
+    async function fetchGameData(gameName) {
+        try {
+            const response = await fetch('apps.json');
+            const games = await response.json();
+            const selectedGame = games.find(game => game.name.toLowerCase() === gameName.toLowerCase());
+            if (selectedGame) {
+                const iframe = document.getElementById('frame');
+                const gameTitle = document.getElementById('GameTitle');
+                const gameImage = document.getElementById('GameImage');
+                const gameDescription = document.getElementById('GameDescription');
+
+                iframe.src = selectedGame.link;
+                gameTitle.textContent = selectedGame.name;
+                gameImage.src = selectedGame.image;
+                gameDescription.textContent = selectedGame.description;
+            } else {
+                console.error('Game not found');
+            }
+        } catch (error) {
+            console.error('Error fetching game data:', error);
+        }
+    }
+
+    // Get the game name from the query parameter
+    const params = new URLSearchParams(window.location.search);
+    const gameName = params.get('game');
+    if (gameName) {
+        fetchGameData(gameName).catch(error => console.error('Error in fetchGameData:', error));
+    } else {
+        console.error('No game specified');
+    }
+
+    // Function to toggle fullscreen mode
+    function toggleFullScreen() {
+        const iframe = document.getElementById('frame');
+        if (!document.fullscreenElement) {
+            iframe.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
+    // Function to reload the page
+    function reloadPage() {
+        location.reload();
+    }
+
+    // Function to navigate back to the home page
+    function goHome() {
+        window.location.href = '/';
+    }
+</script>
+</body>
+</html>
