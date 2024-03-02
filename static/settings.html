@@ -26,14 +26,17 @@
                                           <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
                                                   <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings">Settings</a></div>
                         </div>
-                      <h1>Custom Tab Cloak</h1>
-                       <form id="editForm">
-                        <label for="tabName">Tab Name:</label>
-                        <input type="text" id="tabName" placeholder="Enter Tab Name"><br>
-                        <label for="iconUrl">Icon URL:</label>
-                        <input type="text" id="iconUrl" placeholder="Enter Icon URL"><br>
-                        <button type="submit">Update</button>
-                       </form>
+<div class="container">
+        <h1>Edit Tab Name and Icon</h1>
+        <form id="editForm">
+            <label for="tabName">Tab Name:</label>
+            <input type="text" id="tabName" placeholder="Enter Tab Name"><br>
+            <label for="iconUrl">Icon URL:</label>
+            <input type="text" id="iconUrl" placeholder="Enter Icon URL"><br>
+            <button type="submit">Update</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+    </div>
 <style>
 .container {
     margin: 20px auto;
@@ -69,6 +72,10 @@ button:hover {
 
 </style>
 <script>
+// Store original tab name and icon URL
+var originalTabName = document.title;
+var originalIconUrl = getFaviconUrl();
+
 document.getElementById('editForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -76,13 +83,28 @@ document.getElementById('editForm').addEventListener('submit', function(event) {
     var iconUrl = document.getElementById('iconUrl').value;
 
     document.title = tabName;
-    
+    updateFavicon(iconUrl);
+});
+
+document.getElementById('resetBtn').addEventListener('click', function() {
+    document.title = originalTabName;
+    updateFavicon(originalIconUrl);
+});
+
+// Function to get the current favicon URL
+function getFaviconUrl() {
+    var favicon = document.querySelector("link[rel~='icon']");
+    return favicon ? favicon.href : '';
+}
+
+// Function to update the favicon
+function updateFavicon(iconUrl) {
     var link = document.querySelector("link[rel~='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'icon';
     link.href = iconUrl;
     document.getElementsByTagName('head')[0].appendChild(link);
-});
+}
 </script>
                           <h2 class="settings">Themes</h2>
                           <select id="theme-select" class="settings theme-select">
