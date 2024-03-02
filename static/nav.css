@@ -5,7 +5,6 @@ nav .navitems {
   align-items: center;
   list-style: none;
   opacity: 1;
-  justify-self: flex-end;
   justify-content: center;
   box-sizing: border-box;
   position: fixed;
