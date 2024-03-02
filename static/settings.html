@@ -26,7 +26,64 @@
                                           <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 15px 0 0 15px;"><a href="/chat">Chat</a></div>
                                                   <div class="navitem" style="background-color: rgba(0, 0, 0, 0.2); border-radius: 0 15px 15px 0;"><a selected href="/settings">Settings</a></div>
                         </div>
-                          
+                      <h1>Custom Tab Cloak</h1>
+                       <form id="editForm">
+                        <label for="tabName">Tab Name:</label>
+                        <input type="text" id="tabName" placeholder="Enter Tab Name"><br>
+                        <label for="iconUrl">Icon URL:</label>
+                        <input type="text" id="iconUrl" placeholder="Enter Icon URL"><br>
+                        <button type="submit">Update</button>
+                       </form>
+<style>
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<script>
+document.getElementById('editForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var tabName = document.getElementById('tabName').value;
+    var iconUrl = document.getElementById('iconUrl').value;
+
+    document.title = tabName;
+    
+    var link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'icon';
+    link.href = iconUrl;
+    document.getElementsByTagName('head')[0].appendChild(link);
+});
+</script>
                           <h2 class="settings">Themes</h2>
                           <select id="theme-select" class="settings theme-select">
                             <option value="main">Default</option>
