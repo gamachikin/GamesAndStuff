@@ -51,7 +51,7 @@ label {
     text-align: center;
 }
 
-input[type="text"], button {
+input[type="text"] {
     width: 100%;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -60,12 +60,18 @@ input[type="text"], button {
 }
 
 button {
+    width: calc(50% - 5px); /* Adjusted button width */
     padding: 10px;
     color: #007bff; /* Text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px; /* Increased margin-top */
+    margin-right: 10px; /* Added margin-right */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove margin-right for last button */
 }
 
 button:hover {
