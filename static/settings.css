@@ -52,7 +52,7 @@ button:hover {
         .custom-dropdown {
             display: inline-block;
             position: absolute;
-            left: 50%;
+            left: 75%;
         }
 
         /* Style the dropdown button */
@@ -95,7 +95,7 @@ button:hover {
         .custom-dropdown2 {
             display: inline-block;
             position: absolute;
-            right: 50%;
+            right: 75%;
         }
 
         /* Style the dropdown button */
