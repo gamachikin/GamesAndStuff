@@ -135,59 +135,55 @@ function updateFavicon(iconUrl) {
     <label for="selectOptions">Select Options:</label>
     <select id="selectOptions">
         <option value="default">Default</option>
-        <option value="shrek">test shrek</option>
+        <option value="icon1">Icon 1</option>
         <option value="icon2">Icon 2</option>
         <!-- Add more options as needed -->
     </select>
 
-    <label for="selectOptions">Select Options:</label>
-    <select id="selectOptions">
-        <option value="default">Default</option>
-        <option value="shrek">Icon 1</option>
-        <option value="icon2">Icon 2</option>
-        <!-- Add more options as needed -->
-    </select>
-
-    <button onclick="goToAboutBlank()">About:Blank</button>
+    <button onclick="changeTabProperties()">About:Blank</button>
 
     <script>
-        function goToAboutBlank() {
+        function changeTabProperties() {
             var selectedOption = document.getElementById('selectOptions').value;
-            var newWindow = window.open("about:blank", "_blank");
-            newWindow.onload = function() {
-                var script = newWindow.document.createElement('script');
-                script.innerHTML = `
-                    var selectedOption = '${selectedOption}';
-                    var changeTabIcon = function(iconUrl) {
-                        var link = document.querySelector("link[rel~='icon']") || document.createElement('link');
-                        link.type = 'image/x-icon';
-                        link.rel = 'icon';
-                        link.href = iconUrl;
-                        document.getElementsByTagName('head')[0].appendChild(link);
-                    };
+            var iconUrl;
 
-                    var resetTabIcon = function() {
-                        var link = document.querySelector("link[rel~='icon']");
-                        if (link) {
-                            link.remove();
-                        }
-                    };
+            switch (selectedOption) {
+                case 'icon1':
+                    iconUrl = 'https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png';
+                    break;
+                case 'icon2':
+                    iconUrl = 'https://example.com/icon2.png';
+                    break;
+                // Add more cases for additional options
+                case 'default':
+                    iconUrl = ''; // Reset to default icon
+                    break;
+            }
 
-                    switch (selectedOption) {
-                        case 'shrek':
-                            changeTabIcon('https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png');
-                            break;
-                        case 'icon2':
-                            changeTabIcon('https://example.com/icon2.png');
-                            break;
-                        // Add more cases for additional options
-                        case 'default':
-                            resetTabIcon();
-                            break;
-                    }
-                `;
-                newWindow.document.body.appendChild(script);
-            };
+            changeTabIcon(iconUrl);
+        }
+
+        function changeTabIcon(iconUrl) {
+            var link = document.querySelector("link[rel~='icon']") || document.createElement('link');
+            link.type = 'image/x-icon';
+            link.rel = 'icon';
+            link.href = iconUrl;
+            document.getElementsByTagName('head')[0].appendChild(link);
+
+            // Change tab title based on selected option
+            var title;
+            switch (iconUrl) {
+                case 'https://upload.wikimedia.org/wikipedia/en/4/4d/Shrek_%28character%29.png':
+                    title = 'idk i guess';
+                    break;
+                case 'https://example.com/icon2.png':
+                    title = 'Tab with Icon 2';
+                    break;
+                default:
+                    title = 'About:Blank';
+                    break;
+            }
+            document.title = title;
         }
     </script>
   </body>
