@@ -38,48 +38,6 @@
             <button type="button" id="resetBtn">Reset</button>
         </form>
     </div>
-<style>
-.container {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-input[type="text"] {
-    width: 100%;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #f0f0f0; /* Same color as text boxes */
-}
-
-button {
-    width: calc(50% - 5px); /* Adjusted button width */
-    padding: 10px;
-    color: #333; /* Text color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px; /* Increased margin-top */
-    margin-right: 5px; /* Added margin-right */
-}
-
-button:last-child {
-    margin-right: 0; /* Remove margin-right for last button */
-}
-
-button:hover {
-    background-color: #cce5ff; /* Hover color */
-}
-
-</style>
 <script>
 // Store original tab name and icon URL
 var originalTabName = document.title;
@@ -132,63 +90,6 @@ function updateFavicon(iconUrl) {
                           
                           <br /><br />                          
 
-     <style>
-        /* Style the container to center the dropdown */
-        .container {
-            text-align: center;
-        }
-        option {
-          padding: 9px 16px;
-            color: #fff;
-            text-align: center;
-            cursor: pointer;
-            font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
-        }
-        /* Style the custom dropdown container */
-        .custom-dropdown {
-            position: relative;
-            display: inline-block;
-            top: 70px;
-        }
-
-        /* Style the dropdown button */
-        .dropdown-button {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
-            background-size: cover;
-            color: #fff;
-            font-family: 'Lato', sans-serif;
-            font-size: 19px;
-            width: 200px; /* Adjust the width as needed */
-        }
-
-        /* Style the dropdown options container */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            border-radius: 5px;
-            width: 200px;
-            z-index: 1;
-        }
-
-        /* Style the dropdown options */
-        .dropdown-option {
-            padding: 9px 16px;
-            color: #fff;
-            text-align: center;
-            cursor: pointer;
-            font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
-        }
-
-        /* Show the options when the button is clicked */
-        .custom-dropdown.active .dropdown-content {
-            display: block;
-        }
-    </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
@@ -234,6 +135,7 @@ function updateFavicon(iconUrl) {
     </script>
 
     <div class="container">
+      <h2 class="settings">About:Blank Cloaks</h2>
         <div class="custom-dropdown" onclick="toggleDropdown()">
             <button class="dropdown-button">Select A Cloak</button>
             <div class="dropdown-content">
@@ -251,58 +153,21 @@ function updateFavicon(iconUrl) {
         </div>
     </div>
      <div class="custom-dropdown2">
-        <button class="dropdown-button2" onclick="toggleDropdown2()">Select Option</button>
+       <h2 class="settings">Tab Cloaks</h2>
+        <button class="dropdown-button2" onclick="toggleDropdown2()">Select A Cloak</button>
         <div class="dropdown-content2">
-            <div class="dropdown-option2" onclick="selectOption2('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
-            <div class="dropdown-option2" onclick="selectOption2('Option 2', 'favicon2.ico')">Option 2</div>
-            <div class="dropdown-option2" onclick="selectOption2('Option 3', 'favicon3.ico')">Option 3</div>
+                <div class="dropdown-option2" onclick="selectOption2('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('My Drive - Google Drive', 'https://drive.google.com/favicon.ico')">Google Drive Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Google Docs', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_document_x16.png')">Google Docs Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Home', 'https://edu.google.com/images/svg/gsuite-icons/classroom.svg')">Classroom Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Google', 'https://google.com/favicon.ico')">Google Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Infinite Campus', 'https://www.infinitecampus.com/favicon.ico')">Infinite Campus Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Your Sets | Quizlet', 'https://quizlet.com/favicon.ico')">Quizlet Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Dashboard', 'https://jackson.instructure.com/favicon.ico')">Canvas Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('Clever | Log in', 'https://assets.clever.com/oauth/3b8aa8ff1c6e6c2c353abcf2694107ca9a53126d/favicon.ico?1')">Clever Cloak</div>
+                <div class="dropdown-option2" onclick="selectOption2('IXL | Dashboard', 'https://ixl.com/favicon.ico')">IXL Cloak</div>
         </div>
     </div>
-  <style>
-        .custom-dropdown2 {
-            position: relative;
-            display: inline-block;
-            top: 70px;
-        }
-
-        /* Style the dropdown button */
-        .dropdown-button2 {
-            padding: 8px 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
-            background-size: cover;
-            color: #fff;
-            font-family: 'Lato', sans-serif;
-            font-size: 19px;
-            width: 200px; /* Adjust the width as needed */
-        }
-
-        /* Style the dropdown options container */
-        .dropdown-content2 {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            border-radius: 5px;
-            width: 200px;
-            z-index: 1;
-        }
-
-        /* Style the dropdown options */
-        .dropdown-option2 {
-            padding: 9px 16px;
-            color: #fff;
-            text-align: center;
-            cursor: pointer;
-            font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
-        }
-
-        /* Show the options when the button is clicked */
-        .custom-dropdown2.active .dropdown-content2 {
-            display: block;
-        }
-    </style>
     <script>
         function changeTabTitle(newTitle) {
             document.title = newTitle;  // Change the title of the current tab
