@@ -47,12 +47,16 @@ button:hover {
             text-align: center;
             cursor: pointer;
             font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
+            position: absolute;
+            left: 50%;
         }
         /* Style the custom dropdown container */
         .custom-dropdown {
             position: relative;
             display: inline-block;
             top: 70px;
+            position: absolute;
+            left: 50%;
         }
 
         /* Style the dropdown button */
@@ -67,6 +71,8 @@ button:hover {
             font-family: 'Lato', sans-serif;
             font-size: 19px;
             width: 200px; /* Adjust the width as needed */
+            position: absolute;
+            left: 50%;
         }
 
         /* Style the dropdown options container */
@@ -77,6 +83,8 @@ button:hover {
             border-radius: 5px;
             width: 200px;
             z-index: 1;
+            position: absolute;
+            left: 50%;
         }
 
         /* Style the dropdown options */
@@ -86,6 +94,8 @@ button:hover {
             text-align: center;
             cursor: pointer;
             font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
+            position: absolute;
+            left: 50%;
         }
 
         /* Show the options when the button is clicked */
@@ -96,6 +106,8 @@ button:hover {
             position: relative;
             display: inline-block;
             top: 70px;
+            position: absolute;
+            right: 50%;
         }
 
         /* Style the dropdown button */
@@ -110,6 +122,8 @@ button:hover {
             font-family: 'Lato', sans-serif;
             font-size: 19px;
             width: 200px; /* Adjust the width as needed */
+            position: absolute;
+            right: 50%;
         }
 
         /* Style the dropdown options container */
@@ -120,6 +134,8 @@ button:hover {
             border-radius: 5px;
             width: 200px;
             z-index: 1;
+            position: absolute;
+            right: 50%;
         }
 
         /* Style the dropdown options */
@@ -129,6 +145,8 @@ button:hover {
             text-align: center;
             cursor: pointer;
             font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
+            position: absolute;
+            right: 50%;
         }
 
         /* Show the options when the button is clicked */
