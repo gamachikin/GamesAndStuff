@@ -28,7 +28,7 @@
                         </div>
                       </nav>
 <div class="container" style="padding-top: 125px">
-        <h1>Edit Tab Name and Icon</h1>
+        <h1>Custom Tab Cloaks</h1>
         <form id="editForm">
             <label for="tabName">Tab Name:</label>
             <input type="text" id="tabName" placeholder="Enter Tab Name"><br>
@@ -250,6 +250,50 @@ function updateFavicon(iconUrl) {
             </div>
         </div>
     </div>
+     <div class="custom-dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">Select Option</button>
+        <div class="dropdown-content">
+            <div class="dropdown-option" onclick="selectOption('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
+            <div class="dropdown-option" onclick="selectOption('Option 2', 'favicon2.ico')">Option 2</div>
+            <div class="dropdown-option" onclick="selectOption('Option 3', 'favicon3.ico')">Option 3</div>
+        </div>
+    </div>
+
+    <script>
+        function changeTabTitle(newTitle) {
+            document.title = newTitle;  // Change the title of the current tab
+        }
+
+        function changeFavicon(faviconUrl) {
+            var favicon = document.querySelector('link[rel="shortcut icon"]');
+            if (!favicon) {
+                favicon = document.createElement('link');
+                favicon.rel = 'shortcut icon';
+                document.head.appendChild(favicon);
+            }
+            favicon.href = faviconUrl;  // Change the favicon of the current tab
+        }
+
+        var dropdownActive = false;
+
+        function toggleDropdown() {
+            dropdownActive = !dropdownActive;
+            var dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownActive) {
+                dropdownContent.style.display = 'block';
+                dropdownContent.parentElement.classList.add('active');
+            } else {
+                dropdownContent.style.display = 'none';
+                dropdownContent.parentElement.classList.remove('active');
+            }
+        }
+
+        function selectOption(title, faviconUrl) {
+            toggleDropdown();
+            changeTabTitle(title);
+            changeFavicon(faviconUrl);
+        }
+    </script>
   </body>
                         <script src="settings.js"></script>
                         <script src="index.js"></script>
