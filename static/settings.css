@@ -50,9 +50,7 @@ button:hover {
         }
         /* Style the custom dropdown container */
         .custom-dropdown {
-            position: relative;
             display: inline-block;
-            top: 70px;
             position: absolute;
             left: 50%;
         }
@@ -95,9 +93,7 @@ button:hover {
             display: block;
         }
         .custom-dropdown2 {
-            position: relative;
             display: inline-block;
-            top: 70px;
             position: absolute;
             right: 50%;
         }
