@@ -253,9 +253,9 @@ function updateFavicon(iconUrl) {
      <div class="custom-dropdown2">
         <button class="dropdown-button2" onclick="toggleDropdown2()">Select Option</button>
         <div class="dropdown-content2">
-            <div class="dropdown-option2" onclick="selectOption('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
-            <div class="dropdown-option2" onclick="selectOption('Option 2', 'favicon2.ico')">Option 2</div>
-            <div class="dropdown-option2" onclick="selectOption('Option 3', 'favicon3.ico')">Option 3</div>
+            <div class="dropdown-option2" onclick="selectOption2('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
+            <div class="dropdown-option2" onclick="selectOption2('Option 2', 'favicon2.ico')">Option 2</div>
+            <div class="dropdown-option2" onclick="selectOption2('Option 3', 'favicon3.ico')">Option 3</div>
         </div>
     </div>
   <style>
@@ -329,7 +329,7 @@ function changeFavicon(faviconUrl) {
             }
         }
 
-        function selectOption(title, faviconUrl) {
+        function selectOption2(title, faviconUrl) {
             toggleDropdown2();
             changeTabTitle(title);
             changeFavicon(faviconUrl);
