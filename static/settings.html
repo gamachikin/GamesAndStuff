@@ -250,15 +250,59 @@ function updateFavicon(iconUrl) {
             </div>
         </div>
     </div>
-     <div class="custom-dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown()">Select Option</button>
-        <div class="dropdown-content">
-            <div class="dropdown-option" onclick="selectOption('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
-            <div class="dropdown-option" onclick="selectOption('Option 2', 'favicon2.ico')">Option 2</div>
-            <div class="dropdown-option" onclick="selectOption('Option 3', 'favicon3.ico')">Option 3</div>
+     <div class="custom-dropdown2">
+        <button class="dropdown-button2" onclick="toggleDropdown2()">Select Option</button>
+        <div class="dropdown-content2">
+            <div class="dropdown-option2" onclick="selectOption('Google Slides', 'https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_presentation_x16.png')">Google Slides Cloak</div>
+            <div class="dropdown-option2" onclick="selectOption('Option 2', 'favicon2.ico')">Option 2</div>
+            <div class="dropdown-option2" onclick="selectOption('Option 3', 'favicon3.ico')">Option 3</div>
         </div>
     </div>
+  <style>
+        .custom-dropdown2 {
+            position: relative;
+            display: inline-block;
+            top: 70px;
+        }
 
+        /* Style the dropdown button */
+        .dropdown-button2 {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
+            background-size: cover;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-size: 19px;
+            width: 200px; /* Adjust the width as needed */
+        }
+
+        /* Style the dropdown options container */
+        .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            border-radius: 5px;
+            width: 200px;
+            z-index: 1;
+        }
+
+        /* Style the dropdown options */
+        .dropdown-option2 {
+            padding: 9px 16px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
+        }
+
+        /* Show the options when the button is clicked */
+        .custom-dropdown2.active .dropdown-content2 {
+            display: block;
+        }
+    </style>
     <script>
         function changeTabTitle(newTitle) {
             document.title = newTitle;  // Change the title of the current tab
@@ -273,9 +317,9 @@ function changeFavicon(faviconUrl) {
 
         var dropdownActive = false;
 
-        function toggleDropdown() {
+        function toggleDropdown2() {
             dropdownActive = !dropdownActive;
-            var dropdownContent = document.querySelector('.dropdown-content');
+            var dropdownContent = document.querySelector('.dropdown-content2');
             if (dropdownActive) {
                 dropdownContent.style.display = 'block';
                 dropdownContent.parentElement.classList.add('active');
@@ -286,7 +330,7 @@ function changeFavicon(faviconUrl) {
         }
 
         function selectOption(title, faviconUrl) {
-            toggleDropdown();
+            toggleDropdown2();
             changeTabTitle(title);
             changeFavicon(faviconUrl);
         }
