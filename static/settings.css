@@ -53,6 +53,7 @@ button:hover {
             display: inline-block;
             position: absolute;
             left: 75%;
+            top: 30%;
         }
 
         /* Style the dropdown button */
@@ -96,6 +97,7 @@ button:hover {
             display: inline-block;
             position: absolute;
             right: 75%;
+            top: 30%;
         }
 
         /* Style the dropdown button */
@@ -135,3 +137,15 @@ button:hover {
         .custom-dropdown2.active .dropdown-content2 {
             display: block;
         }
+        .SettingsTitle {
+            display: inline-block;
+            position: absolute;
+            left: 75%;
+            top: 25%;
+        }
+       .SettingsTitle2 {
+            display: inline-block;
+            position: absolute;
+            right: 75%;
+            top: 25%;
+       }
