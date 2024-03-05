@@ -44,10 +44,11 @@ window.onload = function() {
         changeFavicon(storedFaviconUrl);
     }
 };
+
 // Function to change the tab title
 function changeTabTitle(newTitle) {
     document.title = newTitle;  // Change the title of the current tab
-    localStorage.setItem('tabTitle', newTitle);  // Store the tab title in local storage
+    document.cookie = `tabTitle=${newTitle}; path=/`;  // Store the tab title in a cookie
 }
 
 // Function to change the favicon
@@ -55,22 +56,21 @@ function changeFavicon(faviconUrl) {
     var favicon = document.querySelector('link[rel="shortcut icon"]');
     if (favicon) {
         favicon.href = faviconUrl;  // Change the favicon of the current tab
-        localStorage.setItem('faviconUrl', faviconUrl);  // Store the favicon URL in local storage
+        document.cookie = `faviconUrl=${faviconUrl}; path=/`;  // Store the favicon URL in a cookie
     }
 }
 
 // Check if there are stored values for tab title and favicon and apply them
 window.onload = function() {
-    var storedTitle = localStorage.getItem('tabTitle');
-    var storedFaviconUrl = localStorage.getItem('faviconUrl');
-    
-    if (storedTitle) {
-        changeTabTitle(storedTitle);
-    }
-    
-    if (storedFaviconUrl) {
-        changeFavicon(storedFaviconUrl);
-    }
+    var cookies = document.cookie.split(';');
+    cookies.forEach(cookie => {
+        const [name, value] = cookie.trim().split('=');
+        if (name === 'tabTitle') {
+            changeTabTitle(value);
+        } else if (name === 'faviconUrl') {
+            changeFavicon(value);
+        }
+    });
 };
 
 // Function to get the current favicon URL
@@ -87,5 +87,4 @@ function updateFavicon(iconUrl) {
     link.href = iconUrl;
     document.getElementsByTagName('head')[0].appendChild(link);
 }
-
 
