@@ -60,7 +60,7 @@ button:hover {
         .dropdown-button {
             padding: 8px 16px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
             background-size: cover;
@@ -75,7 +75,7 @@ button:hover {
             display: none;
             position: absolute;
             background-color: #333;
-            border-radius: 5px;
+            border-radius: 10px;
             width: 200px;
             z-index: 1;
         }
@@ -104,7 +104,7 @@ button:hover {
         .dropdown-button2 {
             padding: 8px 16px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
             background-size: cover;
@@ -119,7 +119,7 @@ button:hover {
             display: none;
             position: absolute;
             background-color: #333;
-            border-radius: 5px;
+            border-radius: 10px;
             width: 200px;
             z-index: 1;
         }
