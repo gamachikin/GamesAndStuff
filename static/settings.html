@@ -89,9 +89,34 @@
     </div>
     
 <script>
-// Store original tab name and icon URL
-var originalTabName = document.title;
-var originalIconUrl = getFaviconUrl();
+// Function to change the tab title
+function changeTabTitle(newTitle) {
+    document.title = newTitle;  // Change the title of the current tab
+    localStorage.setItem('tabTitle', newTitle);  // Store the tab title in local storage
+}
+
+// Function to change the favicon
+function changeFavicon(faviconUrl) {
+    var favicon = document.querySelector('link[rel="shortcut icon"]');
+    if (favicon) {
+        favicon.href = faviconUrl;  // Change the favicon of the current tab
+        localStorage.setItem('faviconUrl', faviconUrl);  // Store the favicon URL in local storage
+    }
+}
+
+// Check if there are stored values for tab title and favicon and apply them
+window.onload = function() {
+    var storedTitle = localStorage.getItem('tabTitle');
+    var storedFaviconUrl = localStorage.getItem('faviconUrl');
+    
+    if (storedTitle) {
+        changeTabTitle(storedTitle);
+    }
+    
+    if (storedFaviconUrl) {
+        changeFavicon(storedFaviconUrl);
+    }
+};
 
 document.getElementById('editForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -99,13 +124,14 @@ document.getElementById('editForm').addEventListener('submit', function(event) {
     var tabName = document.getElementById('tabName').value;
     var iconUrl = document.getElementById('iconUrl').value;
 
-    document.title = tabName;
-    updateFavicon(iconUrl);
+    changeTabTitle(tabName);
+    changeFavicon(iconUrl);
 });
 
 document.getElementById('resetBtn').addEventListener('click', function() {
-    document.title = originalTabName;
-    updateFavicon(originalIconUrl);
+    localStorage.removeItem('tabTitle');
+    localStorage.removeItem('faviconUrl');
+    location.reload(); // Refresh the page to reset tab title and favicon
 });
 
 // Function to get the current favicon URL
