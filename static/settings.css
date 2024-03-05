@@ -140,12 +140,12 @@ button:hover {
         .SettingsTitle {
             display: inline-block;
             position: absolute;
-            left: 75%;
-            top: 25%;
+            left: 74%;
+            top: 20%;
         }
        .SettingsTitle2 {
             display: inline-block;
             position: absolute;
-            right: 75%;
-            top: 25%;
+            right: 78%;
+            top: 20%;
        }
