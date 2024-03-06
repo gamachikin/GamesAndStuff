@@ -35,3 +35,16 @@ nav a {
                           transition: 0.4s all;
 
 }
+@media (max-width: 768px) {
+  nav .navitems {
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 8px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px 30px;
+  }
+}
