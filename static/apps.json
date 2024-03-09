@@ -12,12 +12,6 @@
     "description": "This is the offical Games And Stuff drawing canvas. You can draw whatever you like, all in real-time so people can see what you're making. There are some rules though, which are, no drawing bad stuff and keep everything family freindly. Otherwize, have fun!"
   },
   {
-    "name": "Crunchyroll",
-    "link": "https://crunchyroll.com",
-    "image": "/assets/icons/Crunchyroll.png",
-    "description": "Crunchyroll is a streaming service that specializes in anime. It offers a wide variety of anime shows and movies, including both simulcasts of new episodes from Japan and a library of older titles."
-  },
-  {
     "name": "Game Emulator",
     "link": "https://demo.emulatorjs.org",
     "image": "/assets/icons/logo.png",
