@@ -12,6 +12,12 @@
     "description": "This is the offical Games And Stuff drawing canvas. You can draw whatever you like, all in real-time so people can see what you're making. There are some rules though, which are, no drawing bad stuff and keep everything family freindly. Otherwize, have fun!"
   },
   {
+    "name": "Padlet",
+    "link": "https://padlet.com/GamesAndStuff/GamesAndStuff",
+    "image": "/assets/icons/Padlet.png",
+    "description": "Padlet is a digital canvas software that allows users to create boards to collect, organize, and present various types of content. This is also the official Games And Stuff Padlet, so be sure to share things about the site!"
+  },
+  {
     "name": "Game Emulator",
     "link": "https://demo.emulatorjs.org",
     "image": "/assets/icons/logo.png",
