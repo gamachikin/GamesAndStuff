@@ -313,7 +313,7 @@
   },
   {
     "name": "ADOFAI",
-    "link": "https://kazwire.com/game/static/a-dance-of-fire-and-ice/index.html",
+    "link": "https://static.playunblocked.com/2019/10/a-dance-of-fire-and-ice/",
     "image": "/assets/icons/ADOFAI.png",
     "description": "ADOFAI, short for A Dance of Fire and Ice, is a rhythm-based game where players must keep a steady beat to progress through levels. The game features minimalist graphics and captivating music, offering a unique and immersive gaming experience."
   },
@@ -384,9 +384,21 @@
     "description": "Pou is a virtual pet game created by Paul Salameh and launched in 2012. The objective of the game is to take care of a small, blob-like creature named Pou by feeding, cleaning, and playing with it. Players can customize their Pou's appearance with a variety of accessories and clothing items."
   },
   {
+    "name": "Slow Roads",
+    "link": "https://slowroads.io",
+    "image": "/assets/icons/SlowRoads.png",
+    "description": "Slow Roads is a casual, procedurally-generated driving game which lets you disconnect from life for a while and run endlessly toward the distant horizon. Set the scenery to suit your mood, throw on some music, and just drive."
+  },
+   {
+    "name": "roblox (test)",
+    "link": "https://korehakyouikuiinkaigatukurimasita.belowxero.net/7dac42062171449ba065dea1efbe218b/_rhsKnrg9://rp0.gS/370d/DVpAajHXh~ffTIHwoo/6Ks3/ZkiLc6.LKFF",
+    "image": "/assets/icons/test.png",
+    "description": "If you see this, all this is is a test for roblox."
+  },
+  {
     "name": "Ant Art Tycoon",
     "link": "https://antarttycoon.github.io/game/index.html",
     "image": "/assets/icons/AntArtTycoon.png",
-    "description": "Ant Art Tycoon is a simulation game where players take on the role of an ant colony manager. The game involves building and managing an ant colony, including constructing tunnels, gathering resources, and defending against predators."
+    "description": "Ant Art Tycoon is an idle game created by Wix Games. You are the manager of a colony of artist ants and your job is to decide how much each painting should sell for. Earn money by adjusting the price tag for each of your ant art pieces to maximize your earnings from potential buyers."
   }
 ]
