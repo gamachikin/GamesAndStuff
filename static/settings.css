@@ -200,3 +200,34 @@ button:hover {
 .theme-select select {
     padding: 8px 16px;
 }
+        .dropdown-button-theme {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
+            background-size: cover;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            font-size: 19px;
+            width: 200px; /* Adjust the width as needed */
+        }
+
+        /* Style the dropdown options container */
+        .dropdown-content-theme {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            border-radius: 10px;
+            width: 200px;
+            z-index: 1;
+        }
+
+        /* Style the dropdown options */
+        .dropdown-option-theme {
+            padding: 9px 16px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Lato', sans-serif; /* Apply the Lato font to option text */
+        }
