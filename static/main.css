@@ -211,3 +211,6 @@ input[type=text] {
     padding: 5px 15px;
     margin: 5px auto;
 }
+.GameButtons:hover {
+    transform: scale(1.05);
+}
