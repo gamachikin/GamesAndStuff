@@ -211,6 +211,21 @@ input[type=text] {
     padding: 5px 15px;
     margin: 5px auto;
 }
-.GameButtons:hover {
+.GameButtons1 {
+    transition: transform 0.3s ease;
+}
+.GameButtons2 {
+    transition: transform 0.3s ease;
+}
+.GameButtons3 {
+    transition: transform 0.3s ease;
+}
+.GameButtons1:hover {
+    transform: scale(1.05);
+}
+.GameButtons2:hover {
+    transform: scale(1.05);
+}
+.GameButtons3:hover {
     transform: scale(1.05);
 }
