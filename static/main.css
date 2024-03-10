@@ -201,15 +201,11 @@ a img {
     margin: 5px auto;
 }
 input[type=text] {
-    background-color: var(--accent);
-    transition: 0.4s border;
-    border-radius: 7px;
-    border: none;
-    color: #000000;
-    font-size: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
     text-align: center;
-    padding: 5px 15px;
-    margin: 5px auto;
+    background-color: #f0f0f0;
 }
 .GameButtons1 {
     transition: transform 0.3s ease;
