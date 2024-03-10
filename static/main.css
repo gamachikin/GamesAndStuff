@@ -206,6 +206,13 @@ input[type=text] {
     box-sizing: border-box;
     text-align: center;
     background-color: #f0f0f0;
+    transition: 0.4s border;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 5px auto;
 }
 .GameButtons1 {
     transition: transform 0.3s ease;
