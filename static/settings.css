@@ -149,3 +149,54 @@ button:hover {
             right: 78%;
             top: 20%;
        }
+.theme-select {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #333; /* Add border to simulate dropdown button */
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    width: 200px; /* Adjust the width as needed */
+    cursor: pointer;
+}
+
+.theme-select .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 10px;
+    width: 200px;
+    z-index: 1;
+}
+
+.theme-select.active .dropdown-content {
+    display: block;
+}
+
+.theme-select option {
+    padding: 9px 16px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Remove default dropdown arrow */
+.theme-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Position the custom dropdown arrow */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGmNsZ2p8hz5XsrmMkoEGwOlGy7R1vEQXKuP0KkmlgxhUPs-4');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    padding-right: 25px; /* Adjust as per image width */
+}
+
+/* Add padding to select to make room for arrow */
+.theme-select select {
+    padding: 8px 16px;
+}
