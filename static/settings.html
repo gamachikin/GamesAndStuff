@@ -40,20 +40,23 @@
         </form>
     </div>
 
-  <h2 class="settings">Themes</h2>
-  <select id="theme-select" class="settings theme-select">
-  <option value="main">Default</option>
-  <option value="purple">Purple</option>
-  <option value="amoled">AMOLED</option>
-  <option value="dark">Dark</option>
-  <option value="green">Green</option>
-  <option value="red">Red</option>
-  <option value="pink">Pink</option>
-  <option value="orange">Orange</option>
-  <option value="just dont">Just Don't</option>
-  <option value="ape">Ape</option>
-  <option value="slope">Slope</option>
-  </select>                         
+<h2 class="settings">Themes</h2>
+<div class="custom-dropdown theme-dropdown" onclick="toggleThemeDropdown()">
+  <button class="dropdown-button theme-select">Select Theme</button>
+  <div class="dropdown-content theme-content">
+    <option value="main">Default</option>
+    <option value="purple">Purple</option>
+    <option value="amoled">AMOLED</option>
+    <option value="dark">Dark</option>
+    <option value="green">Green</option>
+    <option value="red">Red</option>
+    <option value="pink">Pink</option>
+    <option value="orange">Orange</option>
+    <option value="just dont">Just Don't</option>
+    <option value="ape">Ape</option>
+    <option value="slope">Slope</option>
+  </div>
+</div>             
 
       <h2 class="SettingsTitle">About:Blank Cloaks</h2>
         <div class="custom-dropdown" onclick="toggleDropdown()">
@@ -222,6 +225,12 @@ function changeFavicon(faviconUrl) {
             changeTabTitle(title);
             changeFavicon(faviconUrl);
         }
+    </script>
+    <script>
+      function toggleThemeDropdown() {
+  var themeDropdown = document.querySelector('.theme-dropdown');
+  themeDropdown.classList.toggle('active');
+}
     </script>
   </body>
                         <script src="settings.js"></script>
