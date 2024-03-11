@@ -227,20 +227,10 @@ function changeFavicon(faviconUrl) {
         }
     </script>
     <script>
-        var ThemeDropdownActive = false;
-
-        function toggleThemeDropdown() {
-            ThemeDropdownActive = !ThemeDropdownActive;
-            var dropdownContent2 = document.querySelector('.theme-dropdown');
-            if (ThemeDropdownActive) {
-                theme-dropdown.style.display = 'block';
-                theme-dropdown.parentElement.classList.add('active');
-            } else {
-                theme-dropdown.style.display = 'none';
-                theme-dropdown.parentElement.classList.remove('active');
-            }
-        }
-
+      function toggleThemeDropdown() {
+  var themeDropdown = document.querySelector('.theme-dropdown');
+  themeDropdown.classList.toggle('active');
+}
     </script>
   </body>
                         <script src="settings.js"></script>
