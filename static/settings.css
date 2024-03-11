@@ -224,7 +224,7 @@ button:hover {
         }
 
         /* Style the dropdown options */
-        .dropdown-option-theme {
+        .custom-dropdown-theme {
             padding: 9px 16px;
             color: #fff;
             text-align: center;
