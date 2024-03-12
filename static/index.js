@@ -5,14 +5,17 @@ const getObj = function (key) {
     return JSON.parse(localStorage.getItem(key))
 }
 
-window.onload = function() {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-        document.body.setAttribute('theme', storedTheme); // Set the theme attribute on the body
-    } else {
-        document.body.setAttribute('theme', 'main'); // Default theme if no theme is stored
-    }
+if (localStorage.getItem("theme")) {
+    document.body.setAttribute("theme", localStorage.getItem("theme"))
+} else {
+    document.body.setAttribute("theme", "main")
 }
+
+if (localStorage.getItem("theme")) {
+    document.body.setAttribute("theme", localStorage.getItem("theme"))
+}
+console.log(localStorage.getItem("theme"))
+
 
 // Function to change the tab title
 function changeTabTitle(newTitle) {
