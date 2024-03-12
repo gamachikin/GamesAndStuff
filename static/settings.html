@@ -42,7 +42,7 @@
 
 <h2 class="settings">Themes</h2>
 <div class="custom-dropdown-theme theme-dropdown">
-  <select id="theme-dropdown" class="dropdown-button-theme theme-select" onchange="changeTheme()">
+  <select id="theme-dropdown" class="dropdown-button-theme theme-select" onchange="toggleThemeDropdown()">
     <option value="main">Default</option>
     <option value="purple">Purple</option>
     <option value="amoled">AMOLED</option>
@@ -228,11 +228,25 @@ function changeFavicon(faviconUrl) {
         }
     </script>
     <script>
-      function changeTheme() {
-  var themeDropdown = document.getElementById("theme-dropdown");
-  var selectedTheme = themeDropdown.value;
-  // Apply the selected theme logic here
+ function toggleThemeDropdown() {
+  var themeDropdown = document.querySelector('.theme-content');
+  themeDropdown.classList.toggle('show'); // Toggle the 'show' class
 }
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-button-theme')) {
+    var dropdowns = document.getElementsByClassName("theme-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
     </script>
   </body>
                         <script src="settings.js"></script>
