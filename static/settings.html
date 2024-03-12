@@ -228,15 +228,17 @@ function changeFavicon(faviconUrl) {
         }
     </script>
     <script>
- function toggleThemeDropdown() {
-  var themeDropdown = document.querySelector('.theme-content');
-  themeDropdown.classList.toggle('show'); // Toggle the 'show' class
+function toggleThemeDropdown() {
+  var themeDropdown = document.querySelector('.dropdown-content-theme');
+  if (themeDropdown) {
+    themeDropdown.classList.toggle('show'); // Toggle the 'show' class if the element is found
+  }
 }
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropdown-button-theme')) {
-    var dropdowns = document.getElementsByClassName("theme-content");
+    var dropdowns = document.getElementsByClassName("dropdown-content-theme");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -246,7 +248,6 @@ window.onclick = function(event) {
     }
   }
 }
-
     </script>
   </body>
                         <script src="settings.js"></script>
