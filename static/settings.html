@@ -41,9 +41,8 @@
     </div>
 
 <h2 class="settings">Themes</h2>
-<div class="custom-dropdown-theme theme-dropdown" onclick="toggleThemeDropdown()">
-  <button class="dropdown-button-theme theme-select">Select Theme</button>
-  <div id="theme-dropdown" class="dropdown-content-theme theme-content theme-dropdown">
+<div class="custom-dropdown-theme theme-dropdown">
+  <select id="theme-dropdown" class="dropdown-button-theme theme-select" onchange="changeTheme()">
     <option value="main">Default</option>
     <option value="purple">Purple</option>
     <option value="amoled">AMOLED</option>
@@ -55,8 +54,10 @@
     <option value="just dont">Just Don't</option>
     <option value="ape">Ape</option>
     <option value="slope">Slope</option>
-  </div>
-</div>             
+  </select>
+</div>
+
+
 
       <h2 class="SettingsTitle">About:Blank Cloaks</h2>
         <div class="custom-dropdown" onclick="toggleDropdown()">
@@ -227,9 +228,10 @@ function changeFavicon(faviconUrl) {
         }
     </script>
     <script>
-      function toggleThemeDropdown() {
-  var themeDropdown = document.querySelector('.theme-dropdown');
-  themeDropdown.classList.toggle('active');
+      function changeTheme() {
+  var themeDropdown = document.getElementById("theme-dropdown");
+  var selectedTheme = themeDropdown.value;
+  // Apply the selected theme logic here
 }
     </script>
   </body>
