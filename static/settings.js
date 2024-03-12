@@ -1,4 +1,4 @@
-const themeSelect = document.getElementById('theme-select');
+// settings.js
 
 // Function to set the theme
 function setTheme(theme) {
@@ -8,15 +8,17 @@ function setTheme(theme) {
 
 // Apply the stored theme on page load
 window.onload = function() {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-        setTheme(storedTheme);
-        themeSelect.value = storedTheme; // Set the selected value in the theme dropdown
+    const themeSelect = document.getElementById('theme-select');
+    if (themeSelect) { // Ensure the theme select element exists
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+            themeSelect.value = storedTheme; // Set the selected value in the theme dropdown
+        }
+        
+        // Event listener for theme selection
+        themeSelect.addEventListener('change', function() {
+            const selectedTheme = this.value;
+            setTheme(selectedTheme);
+        });
     }
 }
-
-// Event listener for theme selection
-themeSelect.addEventListener('change', function() {
-    const selectedTheme = this.value;
-    setTheme(selectedTheme);
-});
