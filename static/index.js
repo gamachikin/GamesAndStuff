@@ -32,6 +32,7 @@ document.getElementById('theme-select').addEventListener('change', function() {
     setTheme(selectedTheme);
 });
 
+
 // Function to change the tab title
 function changeTabTitle(newTitle) {
     document.title = newTitle;  // Change the title of the current tab
