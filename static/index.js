@@ -28,7 +28,18 @@ document.getElementById('theme-select').addEventListener('change', function() {
     const selectedTheme = this.value;
     setTheme(selectedTheme);
 });
-
+window.onload = function() {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+        setTheme(storedTheme);
+        document.getElementById('theme-select').value = storedTheme; // Set the selected value in the theme dropdown
+    } else {
+        // Default theme if no theme is stored
+        const defaultTheme = 'default';
+        setTheme(defaultTheme);
+        document.getElementById('theme-select').value = defaultTheme; // Set the selected value in the theme dropdown
+    }
+}
 
 // Function to change the tab title
 function changeTabTitle(newTitle) {
