@@ -31,25 +31,6 @@ document.getElementById('theme-select').addEventListener('change', function() {
     const selectedTheme = this.value;
     setTheme(selectedTheme);
 });
-// Apply the stored theme or default theme on page load
-window.onload = function() {
-    console.log("Page loaded."); // Log that the page has loaded
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme) {
-        console.log("Stored theme:", storedTheme); // Log the stored theme value
-        setTheme(storedTheme);
-        console.log("Applied theme:", storedTheme); // Log the currently applied theme
-        document.getElementById('theme-select').value = storedTheme; // Set the selected value in the theme dropdown
-    } else {
-        // Default theme if no theme is stored
-        const defaultTheme = 'default';
-        console.log("No stored theme. Applying default theme:", defaultTheme); // Log that default theme is applied
-        setTheme(defaultTheme);
-        console.log("Applied theme:", defaultTheme); // Log the currently applied theme
-        document.getElementById('theme-select').value = defaultTheme; // Set the selected value in the theme dropdown
-    }
-}
-
 
 // Function to change the tab title
 function changeTabTitle(newTitle) {
