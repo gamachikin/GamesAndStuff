@@ -20,7 +20,7 @@ window.onload = function() {
         document.getElementById('theme-select').value = storedTheme; // Set the selected value in the theme dropdown
     } else {
         // Default theme if no theme is stored
-        const defaultTheme = 'default';
+        const defaultTheme = 'main';
         setTheme(defaultTheme);
         document.getElementById('theme-select').value = defaultTheme; // Set the selected value in the theme dropdown
     }
