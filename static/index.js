@@ -4,17 +4,30 @@ const setObj = function (key, obj) {
 const getObj = function (key) {
     return JSON.parse(localStorage.getItem(key))
 }
-
-if (localStorage.getItem("theme")) {
-    document.body.setAttribute("theme", localStorage.getItem("theme"))
-} else {
-    document.body.setAttribute("theme", "main")
+// Function to set the theme
+function setTheme(theme) {
+    // Set the theme attribute on the body
+    document.body.setAttribute('theme', theme);
+    // Store the theme in local storage
+    localStorage.setItem('theme', theme);
 }
 
-if (localStorage.getItem("theme")) {
-    document.body.setAttribute("theme", localStorage.getItem("theme"))
+// Apply the stored theme or default theme on page load
+window.onload = function() {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+        setTheme(storedTheme);
+        document.getElementById('theme-select').value = storedTheme; // Set the selected value in the theme dropdown
+    } else {
+        setTheme('default'); // Default theme if no theme is stored
+    }
 }
-console.log(localStorage.getItem("theme"))
+
+// Event listener for theme selection
+document.getElementById('theme-select').addEventListener('change', function() {
+    const selectedTheme = this.value;
+    setTheme(selectedTheme);
+});
 
 
 // Function to change the tab title
